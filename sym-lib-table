@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name adafruit_featherwing)(type Legacy)(uri ${KIPRJMOD}/library/adafruit_featherwing.lib)(options "")(descr ""))
+)
