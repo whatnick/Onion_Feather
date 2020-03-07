@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -13,26 +13,22 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L MCU_Module:Omega2+ U1
-U 1 1 5E5E3174
-P 3800 3200
-F 0 "U1" H 3800 1911 50  0000 C CNN
-F 1 "Omega2+" H 3800 1820 50  0000 C CNN
-F 2 "Module:Onion_Omega2+" H 3800 1700 50  0001 C CNN
-F 3 "https://docs.onion.io/omega2-docs/omega2p.html" H 600 2050 50  0001 C CNN
-	1    3800 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L adafruit_featherwing:ADAFRUIT_FEATHERWING MS1
-U 1 1 5E5E3B40
-P 6050 3850
-F 0 "MS1" H 6050 3850 45  0001 C CNN
-F 1 "ADAFRUIT_FEATHERWING" H 6050 3850 45  0001 C CNN
-F 2 "footprints:adafruit_featherwing" H 6050 3850 50  0001 C CNN
-F 3 "" H 6050 3850 50  0001 C CNN
-	1    6050 3850
-	1    0    0    -1  
-$EndComp
+$Sheet
+S 550  4450 2550 1550
+U 5E6449ED
+F0 "Ethernet" 50
+F1 "onion_ether.sch" 50
+$EndSheet
+$Sheet
+S 3200 4450 2550 1550
+U 5E646706
+F0 "OnionModule" 50
+F1 "onion_module.sch" 50
+$EndSheet
+$Sheet
+S 5800 4450 2550 1550
+U 5E647592
+F0 "FeatherBase" 50
+F1 "feather_base.sch" 50
+$EndSheet
 $EndSCHEMATC
