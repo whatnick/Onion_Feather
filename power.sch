@@ -1,0 +1,204 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	3025 3900 3025 3750
+Text Label 3025 3900 0    10   ~ 0
+GND
+Wire Wire Line
+	3575 3850 3575 3900
+Text Label 3575 3850 0    10   ~ 0
+GND
+Wire Wire Line
+	2325 3900 2325 3850
+Text Label 2325 3900 0    10   ~ 0
+GND
+Wire Wire Line
+	1600 2850 1600 2750
+Text Label 1900 3150 0    10   ~ 0
+GND
+Wire Wire Line
+	3575 3225 3575 3450
+Wire Wire Line
+	3575 3550 3575 3450
+Wire Wire Line
+	3475 3450 3575 3450
+Connection ~ 3575 3450
+Text Label 3575 3550 0    70   ~ 0
+3V3
+Wire Wire Line
+	2575 3450 2325 3450
+Wire Wire Line
+	2325 3450 2325 3550
+Wire Wire Line
+	2325 3450 2325 3200
+Wire Wire Line
+	2325 3450 1900 3450
+Connection ~ 2325 3450
+Text Label 2113 3450 0    70   ~ 0
+VIN
+$Comp
+L Omega2-IO-Power-eagle-import:CAP0805-CAP-LARGEPADS C?
+U 1 1 5E652DD3
+P 3575 3750
+AR Path="/5E646706/5E652DD3" Ref="C?"  Part="1" 
+AR Path="/5E65196E/5E652DD3" Ref="C2"  Part="1" 
+F 0 "C2" H 3635 3865 59  0000 L BNN
+F 1 "10uF" H 3635 3665 59  0000 L BNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3575 3750 50  0001 C CNN
+F 3 "" H 3575 3750 50  0001 C CNN
+	1    3575 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Omega2-IO-Power-eagle-import:GND #GND?
+U 1 1 5E652DD9
+P 3025 4000
+AR Path="/5E646706/5E652DD9" Ref="#GND?"  Part="1" 
+AR Path="/5E65196E/5E652DD9" Ref="#GND0101"  Part="1" 
+F 0 "#GND0101" H 3025 4000 50  0001 C CNN
+F 1 "GND" H 2925 3900 59  0000 L BNN
+F 2 "" H 3025 4000 50  0001 C CNN
+F 3 "" H 3025 4000 50  0001 C CNN
+	1    3025 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Omega2-IO-Power-eagle-import:GND #GND?
+U 1 1 5E652DDF
+P 3575 4000
+AR Path="/5E646706/5E652DDF" Ref="#GND?"  Part="1" 
+AR Path="/5E65196E/5E652DDF" Ref="#GND0102"  Part="1" 
+F 0 "#GND0102" H 3575 4000 50  0001 C CNN
+F 1 "GND" H 3475 3900 59  0000 L BNN
+F 2 "" H 3575 4000 50  0001 C CNN
+F 3 "" H 3575 4000 50  0001 C CNN
+	1    3575 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Omega2-IO-Power-eagle-import:CAP0805-CAP-LARGEPADS C?
+U 1 1 5E652DE5
+P 2325 3750
+AR Path="/5E646706/5E652DE5" Ref="C?"  Part="1" 
+AR Path="/5E65196E/5E652DE5" Ref="C1"  Part="1" 
+F 0 "C1" H 2385 3865 59  0000 L BNN
+F 1 "10uF" H 2385 3665 59  0000 L BNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2325 3750 50  0001 C CNN
+F 3 "" H 2325 3750 50  0001 C CNN
+	1    2325 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Omega2-IO-Power-eagle-import:GND #GND?
+U 1 1 5E652DEB
+P 2325 4000
+AR Path="/5E646706/5E652DEB" Ref="#GND?"  Part="1" 
+AR Path="/5E65196E/5E652DEB" Ref="#GND0103"  Part="1" 
+F 0 "#GND0103" H 2325 4000 50  0001 C CNN
+F 1 "GND" H 2225 3900 59  0000 L BNN
+F 2 "" H 2325 4000 50  0001 C CNN
+F 3 "" H 2325 4000 50  0001 C CNN
+	1    2325 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Omega2-IO-Power-eagle-import:CJ1117-3.3-1310120P1 U?
+U 1 1 5E652DF1
+P 3025 3450
+AR Path="/5E646706/5E652DF1" Ref="U?"  Part="1" 
+AR Path="/5E65196E/5E652DF1" Ref="U2"  Part="1" 
+F 0 "U2" H 2725 3600 42  0000 L BNN
+F 1 "CJ1117 3V3" H 2950 3625 42  0000 L BNN
+F 2 "Package_TO_SOT_SMD:SOT-89-3" H 3025 3450 50  0001 C CNN
+F 3 "" H 3025 3450 50  0001 C CNN
+	1    3025 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Omega2-IO-Power-eagle-import:3.3V #U$?
+U 1 1 5E652E09
+P 3575 3125
+AR Path="/5E646706/5E652E09" Ref="#U$?"  Part="1" 
+AR Path="/5E65196E/5E652E09" Ref="#U$0102"  Part="1" 
+F 0 "#U$0102" H 3575 3125 50  0001 C CNN
+F 1 "3.3V" H 3515 3165 42  0000 L BNN
+F 2 "" H 3575 3125 50  0001 C CNN
+F 3 "" H 3575 3125 50  0001 C CNN
+	1    3575 3125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Omega2-IO-Power-eagle-import:PADNORMAL P?
+U 1 1 5E652E0F
+P 3575 3450
+AR Path="/5E646706/5E652E0F" Ref="P?"  Part="1" 
+AR Path="/5E65196E/5E652E0F" Ref="P1"  Part="1" 
+F 0 "P1" H 3575 3450 50  0001 C CNN
+F 1 "PADNORMAL" H 3575 3450 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3575 3450 50  0001 C CNN
+F 3 "" H 3575 3450 50  0001 C CNN
+	1    3575 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 5E6546D5
+P 5350 3500
+F 0 "J3" H 5430 3492 50  0000 L CNN
+F 1 "Conn_01x02" H 5430 3401 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal" H 5350 3500 50  0001 C CNN
+F 3 "~" H 5350 3500 50  0001 C CNN
+	1    5350 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_B_Micro USB1
+U 1 1 5E64C8C4
+P 1600 3250
+F 0 "USB1" H 1370 3147 50  0000 R CNN
+F 1 "USB_B_Micro" H 1370 3238 50  0000 R CNN
+F 2 "Connector_USB:USB_Micro-AB_Molex_47590-0001" H 1750 3200 50  0001 C CNN
+F 3 "~" H 1750 3200 50  0001 C CNN
+	1    1600 3250
+	1    0    0    1   
+$EndComp
+$Comp
+L Omega2-IO-Power-eagle-import:GND #GND?
+U 1 1 5E652E03
+P 1600 2650
+AR Path="/5E646706/5E652E03" Ref="#GND?"  Part="1" 
+AR Path="/5E65196E/5E652E03" Ref="#GND0104"  Part="1" 
+F 0 "#GND0104" H 1600 2650 50  0001 C CNN
+F 1 "GND" H 1500 2550 59  0000 L BNN
+F 2 "" H 1600 2650 50  0001 C CNN
+F 3 "" H 1600 2650 50  0001 C CNN
+	1    1600 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Omega2-IO-Power-eagle-import:VIN #U$?
+U 1 1 5E652DFD
+P 2325 3100
+AR Path="/5E646706/5E652DFD" Ref="#U$?"  Part="1" 
+AR Path="/5E65196E/5E652DFD" Ref="#U$0101"  Part="1" 
+F 0 "#U$0101" H 2325 3100 50  0001 C CNN
+F 1 "VIN" H 2265 3140 42  0000 L BNN
+F 2 "" H 2325 3100 50  0001 C CNN
+F 3 "" H 2325 3100 50  0001 C CNN
+	1    2325 3100
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

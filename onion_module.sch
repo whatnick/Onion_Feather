@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr User 12380 8268
 encoding utf-8
-Sheet 3 4
+Sheet 3 6
 Title ""
 Date ""
 Rev ""
@@ -20,22 +20,6 @@ GND
 Text Label 8325 3725 0    70   ~ 0
 GND
 Wire Wire Line
-	3925 3350 3925 3200
-Text Label 3925 3350 0    10   ~ 0
-GND
-Wire Wire Line
-	4475 3300 4475 3350
-Text Label 4475 3300 0    10   ~ 0
-GND
-Wire Wire Line
-	3225 3350 3225 3300
-Text Label 3225 3350 0    10   ~ 0
-GND
-Wire Wire Line
-	2800 2600 2900 2600
-Text Label 2800 2600 0    10   ~ 0
-GND
-Wire Wire Line
 	8425 4225 8175 4225
 Text Label 8175 4225 0    70   ~ 0
 GND
@@ -47,15 +31,6 @@ Wire Wire Line
 	4450 4500 4850 4500
 Text Label 4575 4500 0    70   ~ 0
 GND
-Wire Wire Line
-	4475 2675 4475 2900
-Wire Wire Line
-	4475 3000 4475 2900
-Wire Wire Line
-	4375 2900 4475 2900
-Connection ~ 4475 2900
-Text Label 4475 3000 0    70   ~ 0
-3V3
 Wire Wire Line
 	7275 3875 7275 3825
 Wire Wire Line
@@ -119,17 +94,6 @@ Wire Wire Line
 Text Label 4550 4400 0    70   ~ 0
 MOSI
 Wire Wire Line
-	3475 2900 3225 2900
-Wire Wire Line
-	3225 2900 3225 3000
-Wire Wire Line
-	3225 2900 3225 2650
-Wire Wire Line
-	3225 2900 2800 2900
-Connection ~ 3225 2900
-Text Label 3013 2900 0    70   ~ 0
-VIN
-Wire Wire Line
 	8425 4425 7275 4425
 Wire Wire Line
 	7275 4425 7275 4275
@@ -181,122 +145,12 @@ F 3 "" H 8825 3525 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Omega2-IO-Power-eagle-import:CAP0805-CAP-LARGEPADS C2
-U 1 1 8350CC17
-P 4475 3200
-F 0 "C2" H 4535 3315 59  0000 L BNN
-F 1 "10uF" H 4535 3115 59  0000 L BNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4475 3200 50  0001 C CNN
-F 3 "" H 4475 3200 50  0001 C CNN
-	1    4475 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Omega2-IO-Power-eagle-import:GND #GND07
-U 1 1 C2693486
-P 3925 3450
-F 0 "#GND07" H 3925 3450 50  0001 C CNN
-F 1 "GND" H 3825 3350 59  0000 L BNN
-F 2 "" H 3925 3450 50  0001 C CNN
-F 3 "" H 3925 3450 50  0001 C CNN
-	1    3925 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Omega2-IO-Power-eagle-import:GND #GND06
-U 1 1 F6847280
-P 4475 3450
-F 0 "#GND06" H 4475 3450 50  0001 C CNN
-F 1 "GND" H 4375 3350 59  0000 L BNN
-F 2 "" H 4475 3450 50  0001 C CNN
-F 3 "" H 4475 3450 50  0001 C CNN
-	1    4475 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Omega2-IO-Power-eagle-import:CAP0805-CAP-LARGEPADS C1
-U 1 1 E7D47EA7
-P 3225 3200
-F 0 "C1" H 3285 3315 59  0000 L BNN
-F 1 "10uF" H 3285 3115 59  0000 L BNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 3225 3200 50  0001 C CNN
-F 3 "" H 3225 3200 50  0001 C CNN
-	1    3225 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Omega2-IO-Power-eagle-import:GND #GND011
-U 1 1 5518330F
-P 3225 3450
-F 0 "#GND011" H 3225 3450 50  0001 C CNN
-F 1 "GND" H 3125 3350 59  0000 L BNN
-F 2 "" H 3225 3450 50  0001 C CNN
-F 3 "" H 3225 3450 50  0001 C CNN
-	1    3225 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Omega2-IO-Power-eagle-import:CJ1117-3.3-1310120P1 U2
-U 1 1 E95166EF
-P 3925 2900
-F 0 "U2" H 3625 3050 42  0000 L BNN
-F 1 "CJ1117 3V3" H 3850 3075 42  0000 L BNN
-F 2 "Package_TO_SOT_SMD:SOT-89-3" H 3925 2900 50  0001 C CNN
-F 3 "" H 3925 2900 50  0001 C CNN
-	1    3925 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Omega2-IO-Power-eagle-import:USB_POWER USB1
-U 1 1 46884A1E
-P 2650 2750
-F 0 "USB1" H 2650 2750 50  0001 C CNN
-F 1 "USB_POWER" H 2650 2750 50  0001 C CNN
-F 2 "Connector_USB:USB_Micro-AB_Molex_47590-0001" H 2650 2750 50  0001 C CNN
-F 3 "" H 2650 2750 50  0001 C CNN
-	1    2650 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Omega2-IO-Power-eagle-import:VIN #U$01
-U 1 1 89E33A62
-P 3225 2550
-F 0 "#U$01" H 3225 2550 50  0001 C CNN
-F 1 "VIN" H 3165 2590 42  0000 L BNN
-F 2 "" H 3225 2550 50  0001 C CNN
-F 3 "" H 3225 2550 50  0001 C CNN
-	1    3225 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Omega2-IO-Power-eagle-import:GND #GND08
-U 1 1 E3161DBF
-P 3000 2600
-F 0 "#GND08" H 3000 2600 50  0001 C CNN
-F 1 "GND" H 2900 2500 59  0000 L BNN
-F 2 "" H 3000 2600 50  0001 C CNN
-F 3 "" H 3000 2600 50  0001 C CNN
-	1    3000 2600
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Omega2-IO-Power-eagle-import:3.3V #U$07
-U 1 1 63C62AE7
-P 4475 2575
-F 0 "#U$07" H 4475 2575 50  0001 C CNN
-F 1 "3.3V" H 4415 2615 42  0000 L BNN
-F 2 "" H 4475 2575 50  0001 C CNN
-F 3 "" H 4475 2575 50  0001 C CNN
-	1    4475 2575
-	1    0    0    -1  
-$EndComp
-$Comp
 L Omega2-IO-Power-eagle-import:M04PTH I2C1
 U 1 1 72792358
 P 8625 4225
 F 0 "I2C1" H 8475 4555 59  0000 L BNN
 F 1 "M04PTH" H 8425 3925 59  0000 L BNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 8625 4225 50  0001 C CNN
+F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 8625 4225 50  0001 C CNN
 F 3 "" H 8625 4225 50  0001 C CNN
 	1    8625 4225
 	-1   0    0    1   
@@ -373,7 +227,7 @@ U 1 1 449C7C68
 P 4150 4400
 F 0 "J2" H 3800 4630 70  0000 L BNN
 F 1 "CON_HEADER_PRG_AVR_ICSP-PTH" H 4150 4400 50  0001 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical" H 4150 4400 50  0001 C CNN
+F 2 "Connector_JST:JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal" H 4150 4400 50  0001 C CNN
 F 3 "" H 4150 4400 50  0001 C CNN
 	1    4150 4400
 	1    0    0    -1  
@@ -387,17 +241,6 @@ F 1 "JUMPER2" V 8000 2925 59  0000 L BNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7775 2925 50  0001 C CNN
 F 3 "" H 7775 2925 50  0001 C CNN
 	1    7775 2925
-	1    0    0    -1  
-$EndComp
-$Comp
-L Omega2-IO-Power-eagle-import:PADNORMAL P1
-U 1 1 24F1395A
-P 4475 2900
-F 0 "P1" H 4475 2900 50  0001 C CNN
-F 1 "PADNORMAL" H 4475 2900 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4475 2900 50  0001 C CNN
-F 3 "" H 4475 2900 50  0001 C CNN
-	1    4475 2900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -437,15 +280,4 @@ Wire Wire Line
 	8050 3625 8825 3625
 Wire Wire Line
 	8100 3525 8825 3525
-$Comp
-L MCU_Module:Omega2+ U?
-U 1 1 5E65C14D
-P 6150 6150
-F 0 "U?" H 6150 4861 50  0000 C CNN
-F 1 "Omega2+" H 6150 4770 50  0000 C CNN
-F 2 "Module:Onion_Omega2+" H 6150 4650 50  0001 C CNN
-F 3 "https://docs.onion.io/omega2-docs/omega2p.html" H 2950 5000 50  0001 C CNN
-	1    6150 6150
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC

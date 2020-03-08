@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -30,5 +30,17 @@ S 5800 4450 2550 1550
 U 5E647592
 F0 "FeatherBase" 50
 F1 "feather_base.sch" 50
+$EndSheet
+$Sheet
+S 550  2700 2550 1550
+U 5E65196E
+F0 "Power Subsystems" 50
+F1 "power.sch" 50
+$EndSheet
+$Sheet
+S 3200 2700 2550 1550
+U 5E656C4B
+F0 "USB Interfaces" 50
+F1 "USB_system.sch" 50
 $EndSheet
 $EndSCHEMATC
