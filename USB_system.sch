@@ -35,4 +35,10 @@ F 3 " ~" H 7200 3250 50  0001 C CNN
 	1    7050 3300
 	1    0    0    -1  
 $EndComp
+Text GLabel 7350 3100 2    50   Output ~ 0
+5V_BOOST
+Text GLabel 7350 3300 2    50   Input ~ 0
+USB_OUT+
+Text GLabel 7350 3400 2    50   Input ~ 0
+USB_OUT-
 $EndSCHEMATC

@@ -62,8 +62,6 @@ Wire Wire Line
 Text Label 4550 4300 0    70   ~ 0
 3V3
 Wire Wire Line
-	8625 3225 8825 3225
-Wire Wire Line
 	7175 3425 7075 3325
 Wire Wire Line
 	7075 3325 6850 3325
@@ -134,21 +132,10 @@ Wire Wire Line
 Text Label 8175 3525 0    70   ~ 0
 FT_PWR
 $Comp
-L Omega2-IO-Power-eagle-import:CON_HEADER_1X06 PTH1
-U 1 1 CB60B16F
-P 8825 3525
-F 0 "PTH1" H 8825 3875 59  0000 L BNN
-F 1 "CON_HEADER_1X06" H 8825 3525 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 8825 3525 50  0001 C CNN
-F 3 "" H 8825 3525 50  0001 C CNN
-	1    8825 3525
-	1    0    0    1   
-$EndComp
-$Comp
-L Omega2-IO-Power-eagle-import:M04PTH I2C1
+L Omega2-IO-Power-eagle-import:M04PTH J5
 U 1 1 72792358
 P 8625 4225
-F 0 "I2C1" H 8475 4555 59  0000 L BNN
+F 0 "J5" H 8475 4555 59  0000 L BNN
 F 1 "M04PTH" H 8425 3925 59  0000 L BNN
 F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 8625 4225 50  0001 C CNN
 F 3 "" H 8625 4225 50  0001 C CNN
@@ -161,7 +148,7 @@ U 1 1 9D727F8A
 P 7275 4075
 F 0 "R1" H 7225 4134 59  0000 L BNN
 F 1 "4.7K" H 7175 3945 59  0000 L BNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 7275 4075 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7275 4075 50  0001 C CNN
 F 3 "" H 7275 4075 50  0001 C CNN
 	1    7275 4075
 	0    -1   -1   0   
@@ -172,7 +159,7 @@ U 1 1 4C4A9837
 P 7600 4075
 F 0 "R2" H 7550 4134 59  0000 L BNN
 F 1 "4.7K" H 7500 3945 59  0000 L BNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 7600 4075 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7600 4075 50  0001 C CNN
 F 3 "" H 7600 4075 50  0001 C CNN
 	1    7600 4075
 	0    -1   -1   0   
@@ -211,17 +198,6 @@ F 3 "" H 7275 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Omega2-IO-Power-eagle-import:CON_HEADER_1X06-PTH FTDI1
-U 1 1 0C100F00
-P 8625 3525
-F 0 "FTDI1" H 8575 3875 59  0000 L BNN
-F 1 "CON_HEADER_1X06-PTH" H 8625 3525 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 8625 3525 50  0001 C CNN
-F 3 "" H 8625 3525 50  0001 C CNN
-	1    8625 3525
-	1    0    0    1   
-$EndComp
-$Comp
 L Omega2-IO-Power-eagle-import:CON_HEADER_PRG_AVR_ICSP-PTH J2
 U 1 1 449C7C68
 P 4150 4400
@@ -256,18 +232,6 @@ F 3 "" H 8050 3725 50  0001 C CNN
 $EndComp
 Text Notes 5250 2575 0    127  ~ 0
 Omega2 Headers
-Text Notes 9025 3325 0    59   ~ 0
-FTDI_RXD
-Text Notes 9025 3425 0    59   ~ 0
-FTDI_TXD
-Text Notes 9025 3625 0    59   ~ 0
-FTDI_CTS
-Text Notes 9025 3225 0    59   ~ 0
-FTDI_DTR
-Text Notes 9025 3525 0    59   ~ 0
-FTDI_PWR
-Text Notes 9025 3725 0    59   ~ 0
-FTDI_GND
 Text Notes 7600 2700 0    70   ~ 0
 Power with 3V3 FTDI ONLY\nUse clone adapters with\n3V3 regulator on board
 Wire Wire Line
@@ -280,4 +244,38 @@ Wire Wire Line
 	8050 3625 8825 3625
 Wire Wire Line
 	8100 3525 8825 3525
+Text HLabel 8825 3325 2    50   Output ~ 0
+FTDI_RXD
+Text HLabel 8825 3425 2    50   Input ~ 0
+FTDI_TXD
+Text HLabel 8825 3525 2    50   Input ~ 0
+FTDI_PWR
+Text HLabel 8825 3625 2    50   Input ~ 0
+FTDI_CTS
+Text HLabel 8825 3725 2    50   Input ~ 0
+FTDI_GND
+Text HLabel 6850 3725 2    50   Output ~ 0
+ETH_TX-
+Text HLabel 6850 3825 2    50   Output ~ 0
+ETH_TX+
+Text HLabel 6850 3925 2    50   Input ~ 0
+ETH_RX-
+Text HLabel 6850 4025 2    50   Input ~ 0
+ETH_RX+
+Text GLabel 6850 3125 2    50   Output ~ 0
+USB_OUT+
+Text GLabel 6850 3225 2    50   Output ~ 0
+USB_OUT-
+Text GLabel 7890 4325 3    50   Output ~ 0
+SCL
+Text GLabel 7675 4425 3    50   Output ~ 0
+SDA
+Text GLabel 3500 4300 0    50   Input ~ 0
+MISO
+Text GLabel 3500 4400 0    50   Output ~ 0
+SCLK
+Text GLabel 3500 4500 0    50   Output ~ 0
+CS
+Text GLabel 4850 4400 2    50   Output ~ 0
+MOSI
 $EndSCHEMATC

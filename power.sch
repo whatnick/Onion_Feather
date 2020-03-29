@@ -33,13 +33,9 @@ Wire Wire Line
 	3575 3225 3575 3450
 Wire Wire Line
 	3575 3550 3575 3450
-Wire Wire Line
-	3475 3450 3575 3450
 Connection ~ 3575 3450
 Text Label 3575 3550 0    70   ~ 0
 3V3
-Wire Wire Line
-	2575 3450 2325 3450
 Wire Wire Line
 	2325 3450 2325 3550
 Wire Wire Line
@@ -112,19 +108,6 @@ F 1 "GND" H 2225 3900 59  0000 L BNN
 F 2 "" H 2325 4000 50  0001 C CNN
 F 3 "" H 2325 4000 50  0001 C CNN
 	1    2325 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Omega2-IO-Power-eagle-import:CJ1117-3.3-1310120P1 U?
-U 1 1 5E652DF1
-P 3025 3450
-AR Path="/5E646706/5E652DF1" Ref="U?"  Part="1" 
-AR Path="/5E65196E/5E652DF1" Ref="U2"  Part="1" 
-F 0 "U2" H 2725 3600 42  0000 L BNN
-F 1 "CJ1117 3V3" H 2950 3625 42  0000 L BNN
-F 2 "Package_TO_SOT_SMD:SOT-89-3" H 3025 3450 50  0001 C CNN
-F 3 "" H 3025 3450 50  0001 C CNN
-	1    3025 3450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -201,4 +184,19 @@ F 3 "" H 2325 3100 50  0001 C CNN
 	1    2325 3100
 	1    0    0    -1  
 $EndComp
+$Comp
+L Regulator_Linear:AP1117-33 U2
+U 1 1 5E80DF0D
+P 3025 3450
+F 0 "U2" H 3025 3692 50  0000 C CNN
+F 1 "AP1117-33" H 3025 3601 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 3025 3650 50  0001 C CNN
+F 3 "http://www.diodes.com/datasheets/AP1117.pdf" H 3125 3200 50  0001 C CNN
+	1    3025 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2325 3450 2725 3450
+Wire Wire Line
+	3325 3450 3575 3450
 $EndSCHEMATC

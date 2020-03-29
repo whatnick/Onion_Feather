@@ -26,4 +26,16 @@ F 3 "" H 3550 4150 50  0001 C CNN
 	1    3550 4150
 	1    0    0    -1  
 $EndComp
+Text GLabel 4750 4350 3    50   Input ~ 0
+SCLK
+Text GLabel 4850 4350 3    50   Input ~ 0
+MOSI
+Text GLabel 4950 4350 3    50   Output ~ 0
+MISO
+Text GLabel 4750 2650 1    50   Output ~ 0
+CS
+Text GLabel 5250 2650 1    50   Output ~ 0
+SDA
+Text GLabel 5150 2650 1    50   Output ~ 0
+SCL
 $EndSCHEMATC
