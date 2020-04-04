@@ -10,3 +10,8 @@ Adapter board adding much needed USB , Lipo , ADC's etc to Onion-Omega form fact
 - 8-channel I2C ADC for the ADC pins - [AD7997](https://www.analog.com/en/products/ad7997.html#product-overview)
 - Dense 20 pin 1.0 mm pitch board-to-wire connector for all pins - [Molex 203566-2007](https://au.mouser.com/ProductDetail/Molex/203566-2007?qs=sGAEpiMZZMs%252BGHln7q6pm8Vn94ktop%2FJB3denez338oFsDPiNVR1nA%3D%3D)
 - Qwiic format JST-SH I2C bus connector - [Qwiic](https://www.sparkfun.com/qwiic)
+
+## Reference Prior Art
+- [Adafruit ESP32 Huzzah Feather](https://github.com/adafruit/Adafruit-HUZZAH32-ESP32-Feather-PCB)
+- [BQ25895 Breakout](https://www.bernebeer.nl/new-bq25895-breakout/)
+- [Qwiic Featherwing](https://github.com/hongselectronics/Qwiic_Featherwing)

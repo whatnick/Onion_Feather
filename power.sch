@@ -593,4 +593,25 @@ Wire Wire Line
 	2190 3050 2190 2835
 Text Label 2190 2835 2    50   ~ 0
 ID
+$Comp
+L Omega2-IO-Power-eagle-import:VIN #U$?
+U 1 1 5E87F320
+P 4905 2270
+AR Path="/5E646706/5E87F320" Ref="#U$?"  Part="1" 
+AR Path="/5E65196E/5E87F320" Ref="#U$0103"  Part="1" 
+F 0 "#U$0103" H 4905 2270 50  0001 C CNN
+F 1 "VIN" H 4845 2310 42  0000 L BNN
+F 2 "" H 4905 2270 50  0001 C CNN
+F 3 "" H 4905 2270 50  0001 C CNN
+	1    4905 2270
+	1    0    0    -1  
+$EndComp
+Text Label 7135 3070 0    50   ~ 0
+VBAT
+Wire Wire Line
+	6580 3470 6880 3470
+Text Label 6880 3470 2    50   ~ 0
+DSEL
+Text GLabel 8165 2305 2    50   Output ~ 0
+5V_BOOST
 $EndSCHEMATC

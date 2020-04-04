@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Interface_USB:CP2102N-A01-GQFN24 U3
-U 1 1 5E65736F
-P 4400 3300
-F 0 "U3" H 4400 4381 50  0000 C CNN
-F 1 "CP2102N-A01-GQFN24" H 4400 4290 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 4850 2500 50  0001 L CNN
-F 3 "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf" H 4450 2250 50  0001 C CNN
-	1    4400 3300
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:USB_A J4
 U 1 1 5E659527
 P 7050 3300
@@ -35,10 +24,182 @@ F 3 " ~" H 7200 3250 50  0001 C CNN
 	1    7050 3300
 	1    0    0    -1  
 $EndComp
-Text GLabel 7350 3100 2    50   Output ~ 0
+Text GLabel 7350 3100 2    50   Input ~ 0
 5V_BOOST
 Text GLabel 7350 3300 2    50   Input ~ 0
 USB_OUT+
 Text GLabel 7350 3400 2    50   Input ~ 0
 USB_OUT-
+Wire Wire Line
+	3800 3700 3280 3700
+Wire Wire Line
+	3800 3800 3280 3800
+Text Label 3280 3700 0    50   ~ 0
+USB_IN+
+Text Label 3280 3800 0    50   ~ 0
+USB_IN-
+Wire Wire Line
+	3800 3600 3530 3600
+Text Label 3280 3600 0    50   ~ 0
+VIN
+NoConn ~ 5000 3600
+NoConn ~ 5000 3700
+NoConn ~ 5000 3800
+NoConn ~ 5000 3900
+$Comp
+L Omega2-IO-Power-eagle-import:VIN #0101
+U 1 1 5E886379
+P 3280 3500
+F 0 "#0101" H 3330 3550 50  0001 C CNN
+F 1 "VIN" H 3230 3545 42  0000 L CNN
+F 2 "" H 3280 3500 50  0001 C CNN
+F 3 "" H 3280 3500 50  0001 C CNN
+	1    3280 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5E887479
+P 7050 3700
+F 0 "#PWR0106" H 7050 3450 50  0001 C CNN
+F 1 "GND" H 7055 3527 50  0000 C CNN
+F 2 "" H 7050 3700 50  0001 C CNN
+F 3 "" H 7050 3700 50  0001 C CNN
+	1    7050 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3700 7050 3700
+Connection ~ 7050 3700
+Wire Wire Line
+	3800 3300 3530 3300
+Wire Wire Line
+	3530 3300 3530 3600
+Connection ~ 3530 3600
+Wire Wire Line
+	3530 3600 3280 3600
+Wire Wire Line
+	4590 4200 4590 4290
+$Comp
+L power:GND #PWR0107
+U 1 1 5E9F2FE2
+P 4590 4290
+F 0 "#PWR0107" H 4590 4040 50  0001 C CNN
+F 1 "GND" H 4595 4117 50  0000 C CNN
+F 2 "" H 4590 4290 50  0001 C CNN
+F 3 "" H 4590 4290 50  0001 C CNN
+	1    4590 4290
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3280 3600 2975 3600
+Connection ~ 3280 3600
+$Comp
+L Device:C_Small C16
+U 1 1 5E9F3C9F
+P 2975 3700
+F 0 "C16" H 3067 3746 50  0000 L CNN
+F 1 "1u" H 3067 3655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2975 3700 50  0001 C CNN
+F 3 "~" H 2975 3700 50  0001 C CNN
+	1    2975 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5E9F4DF5
+P 2975 3800
+F 0 "#PWR0108" H 2975 3550 50  0001 C CNN
+F 1 "GND" H 2980 3627 50  0000 C CNN
+F 2 "" H 2975 3800 50  0001 C CNN
+F 3 "" H 2975 3800 50  0001 C CNN
+	1    2975 3800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3800 2700
+NoConn ~ 3800 3000
+NoConn ~ 3800 3100
+NoConn ~ 5000 2700
+NoConn ~ 5000 3200
+NoConn ~ 5000 2800
+Wire Wire Line
+	5000 3000 5220 3000
+Wire Wire Line
+	5000 3100 5220 3100
+Connection ~ 4500 4200
+Wire Wire Line
+	4500 4200 4590 4200
+Wire Wire Line
+	4400 4200 4500 4200
+$Comp
+L Interface_USB:CP2102N-A01-GQFN24 U3
+U 1 1 5E65736F
+P 4400 3300
+F 0 "U3" H 4400 4381 50  0000 C CNN
+F 1 "CP2102N-A01-GQFN24" H 4400 4290 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 4850 2500 50  0001 L CNN
+F 3 "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf" H 4450 2250 50  0001 C CNN
+	1    4400 3300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5000 3400
+Wire Wire Line
+	4710 2400 4710 2190
+Wire Wire Line
+	4300 2400 4400 2400
+Connection ~ 4400 2400
+Wire Wire Line
+	4400 2400 4710 2400
+$Comp
+L Omega2-IO-Power-eagle-import:3.3V #0102
+U 1 1 5E9F8483
+P 4710 1885
+F 0 "#0102" H 4760 1935 50  0001 C CNN
+F 1 "3.3V" H 4788 1848 42  0000 L CNN
+F 2 "" H 4710 1885 50  0001 C CNN
+F 3 "" H 4710 1885 50  0001 C CNN
+	1    4710 1885
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C17
+U 1 1 5E9F902E
+P 4810 2190
+F 0 "C17" V 5039 2190 50  0000 C CNN
+F 1 "100n" V 4948 2190 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4810 2190 50  0001 C CNN
+F 3 "~" H 4810 2190 50  0001 C CNN
+	1    4810 2190
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4710 2190
+Wire Wire Line
+	4710 2190 4710 1985
+$Comp
+L power:GND #PWR0109
+U 1 1 5E9F9F66
+P 4910 2190
+F 0 "#PWR0109" H 4910 1940 50  0001 C CNN
+F 1 "GND" V 4915 2062 50  0000 R CNN
+F 2 "" H 4910 2190 50  0001 C CNN
+F 3 "" H 4910 2190 50  0001 C CNN
+	1    4910 2190
+	0    -1   -1   0   
+$EndComp
+Text Label 5060 3100 0    50   ~ 0
+RX
+Text Label 5070 3000 0    50   ~ 0
+TX
+Text GLabel 5220 3000 2    50   Input ~ 0
+USB_TX
+Text GLabel 5220 3100 2    50   Output ~ 0
+USB_RX
+Wire Wire Line
+	5000 2900 5220 2900
+Text Label 5220 2900 0    50   ~ 0
+RTS
+Wire Wire Line
+	5000 3300 5220 3300
+Text Label 5220 3300 0    50   ~ 0
+DTR
 $EndSCHEMATC
