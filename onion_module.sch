@@ -19,8 +19,6 @@ Text Label 6950 2925 0    70   ~ 0
 GND
 Text Label 8325 3725 0    70   ~ 0
 GND
-Wire Wire Line
-	8425 4225 8175 4225
 Text Label 8175 4225 0    70   ~ 0
 GND
 Wire Wire Line
@@ -43,8 +41,6 @@ Wire Wire Line
 	7600 3825 7900 3825
 Wire Wire Line
 	7900 3825 7900 4125
-Wire Wire Line
-	8425 4125 7900 4125
 Connection ~ 7600 3825
 Text Label 8200 4125 0    70   ~ 0
 3V3
@@ -92,16 +88,12 @@ Wire Wire Line
 Text Label 4550 4400 0    70   ~ 0
 MOSI
 Wire Wire Line
-	8425 4425 7275 4425
-Wire Wire Line
 	7275 4425 7275 4275
 Wire Wire Line
 	7275 4425 6850 4425
 Text Label 8175 4425 0    70   ~ 0
 SDA
 Connection ~ 7275 4425
-Wire Wire Line
-	8425 4325 7600 4325
 Wire Wire Line
 	7600 4325 7600 4275
 Wire Wire Line
@@ -134,12 +126,12 @@ FT_PWR
 $Comp
 L Omega2-IO-Power-eagle-import:M04PTH J5
 U 1 1 72792358
-P 8625 4225
-F 0 "J5" H 8475 4555 59  0000 L BNN
-F 1 "M04PTH" H 8425 3925 59  0000 L BNN
-F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 8625 4225 50  0001 C CNN
-F 3 "" H 8625 4225 50  0001 C CNN
-	1    8625 4225
+P 8970 4230
+F 0 "J5" H 8820 4560 59  0000 L BNN
+F 1 "M04PTH" H 8770 3930 59  0000 L BNN
+F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 8970 4230 50  0001 C CNN
+F 3 "" H 8970 4230 50  0001 C CNN
+	1    8970 4230
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -289,4 +281,28 @@ F 3 "" H 4850 4500 50  0001 C CNN
 	1    4850 4500
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	8575 4425 8575 4330
+Wire Wire Line
+	8575 4330 8770 4330
+Wire Wire Line
+	7275 4425 8575 4425
+Wire Wire Line
+	8655 4325 8655 4430
+Wire Wire Line
+	8655 4430 8770 4430
+Wire Wire Line
+	7600 4325 8655 4325
+Wire Wire Line
+	8585 4225 8585 4130
+Wire Wire Line
+	8585 4130 8770 4130
+Wire Wire Line
+	8175 4225 8585 4225
+Wire Wire Line
+	8770 4230 8655 4230
+Wire Wire Line
+	8655 4230 8655 4125
+Wire Wire Line
+	7900 4125 8655 4125
 $EndSCHEMATC
