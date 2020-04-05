@@ -17,8 +17,6 @@ Wire Wire Line
 	6850 2925 7150 2925
 Text Label 6950 2925 0    70   ~ 0
 GND
-Text Label 8325 3725 0    70   ~ 0
-GND
 Text Label 8175 4225 0    70   ~ 0
 GND
 Wire Wire Line
@@ -48,11 +46,8 @@ Wire Wire Line
 	7275 2800 7275 3025
 Wire Wire Line
 	6850 3025 7275 3025
-Wire Wire Line
-	7275 3025 7775 3025
 Text Label 6950 3025 0    70   ~ 0
 3V3
-Connection ~ 7275 3025
 Wire Wire Line
 	4450 4300 4850 4300
 Text Label 4550 4300 0    70   ~ 0
@@ -69,8 +64,6 @@ Wire Wire Line
 	7075 3425 7175 3325
 Text Label 7375 3325 0    70   ~ 0
 TX
-Text Label 8350 3625 0    70   ~ 0
-RTS
 Wire Wire Line
 	4900 4125 5350 4125
 Text Label 4975 4125 0    70   ~ 0
@@ -117,12 +110,6 @@ Wire Wire Line
 	3850 4400 3500 4400
 Text Label 3525 4400 0    70   ~ 0
 CLK
-Wire Wire Line
-	7875 3025 8100 3025
-Wire Wire Line
-	8100 3025 8100 3525
-Text Label 8175 3525 0    70   ~ 0
-FT_PWR
 $Comp
 L Omega2-IO-Power-eagle-import:M04PTH J5
 U 1 1 72792358
@@ -200,52 +187,14 @@ F 3 "" H 4150 4400 50  0001 C CNN
 	1    4150 4400
 	1    0    0    -1  
 $EndComp
-$Comp
-L Omega2-IO-Power-eagle-import:JUMPER2 JP1
-U 1 1 0B60073D
-P 7775 2925
-F 0 "JP1" V 7725 2925 59  0000 L BNN
-F 1 "JUMPER2" V 8000 2925 59  0000 L BNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7775 2925 50  0001 C CNN
-F 3 "" H 7775 2925 50  0001 C CNN
-	1    7775 2925
-	1    0    0    -1  
-$EndComp
-$Comp
-L Omega2-IO-Power-eagle-import:PADNORMAL P2
-U 1 1 3AA8575A
-P 8050 3725
-F 0 "P2" H 8050 3725 50  0001 C CNN
-F 1 "PADNORMAL" H 8050 3725 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8050 3725 50  0001 C CNN
-F 3 "" H 8050 3725 50  0001 C CNN
-	1    8050 3725
-	1    0    0    -1  
-$EndComp
 Text Notes 5250 2575 0    127  ~ 0
 Omega2 Headers
 Text Notes 7600 2700 0    70   ~ 0
 Power with 3V3 FTDI ONLY\nUse clone adapters with\n3V3 regulator on board
 Wire Wire Line
-	8050 3725 8825 3725
-Wire Wire Line
 	7175 3425 8825 3425
 Wire Wire Line
 	7175 3325 8825 3325
-Wire Wire Line
-	8050 3625 8825 3625
-Wire Wire Line
-	8100 3525 8825 3525
-Text HLabel 8825 3325 2    50   Output ~ 0
-FTDI_RXD
-Text HLabel 8825 3425 2    50   Input ~ 0
-FTDI_TXD
-Text HLabel 8825 3525 2    50   Input ~ 0
-FTDI_PWR
-Text HLabel 8825 3625 2    50   Input ~ 0
-FTDI_CTS
-Text HLabel 8825 3725 2    50   Input ~ 0
-FTDI_GND
 Text HLabel 6850 3725 2    50   Output ~ 0
 ETH_TX-
 Text HLabel 6850 3825 2    50   Output ~ 0
@@ -305,4 +254,40 @@ Wire Wire Line
 	8655 4230 8655 4125
 Wire Wire Line
 	7900 4125 8655 4125
+Text GLabel 8825 3325 2    50   Output ~ 0
+USB_TX
+Text GLabel 8825 3425 2    50   Input ~ 0
+USB_RX
+Text GLabel 5350 3625 0    50   Input ~ 0
+FEATHER_RX
+Text GLabel 5350 3725 0    50   Output ~ 0
+FEATHER_TX
+Wire Wire Line
+	5350 4425 5235 4425
+Wire Wire Line
+	5235 4425 5235 4725
+Text GLabel 5235 4725 3    50   Input ~ 0
+~RESET
+Text GLabel 5350 3025 0    50   BiDi ~ 0
+GPIO11
+Text GLabel 5350 3125 0    50   BiDi ~ 0
+GPIO3
+Text GLabel 5350 3225 0    50   BiDi ~ 0
+GPIO2
+Text GLabel 5350 3325 0    50   BiDi ~ 0
+GPIO17
+Text GLabel 5350 3425 0    50   BiDi ~ 0
+GPIO16
+Text GLabel 5350 3525 0    50   BiDi ~ 0
+GPIO15
+Text GLabel 5350 4225 0    50   BiDi ~ 0
+GPIO1
+Text GLabel 5350 4325 0    50   BiDi ~ 0
+GPIO0
+Text GLabel 6850 4125 2    50   BiDi ~ 0
+GPIO18
+Text GLabel 6850 4225 2    50   BiDi ~ 0
+GPIO19
+Text GLabel 6850 3525 2    50   BiDi ~ 0
+GPIO38
 $EndSCHEMATC

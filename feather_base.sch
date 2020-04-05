@@ -38,4 +38,55 @@ Text GLabel 5250 2650 1    50   Output ~ 0
 SDA
 Text GLabel 5150 2650 1    50   Output ~ 0
 SCL
+Text GLabel 3750 4350 3    50   Output ~ 0
+~RESET
+Wire Wire Line
+	3850 4350 3850 4640
+$Comp
+L Omega2-IO-Power-eagle-import:3.3V #0103
+U 1 1 5E89BE4B
+P 3850 4740
+F 0 "#0103" H 3900 4790 50  0001 C CNN
+F 1 "3.3V" H 3772 4702 42  0000 R CNN
+F 2 "" H 3850 4740 50  0001 C CNN
+F 3 "" H 3850 4740 50  0001 C CNN
+	1    3850 4740
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5E89CF40
+P 4050 4350
+F 0 "#PWR0110" H 4050 4100 50  0001 C CNN
+F 1 "GND" H 4055 4177 50  0000 C CNN
+F 2 "" H 4050 4350 50  0001 C CNN
+F 3 "" H 4050 4350 50  0001 C CNN
+	1    4050 4350
+	1    0    0    -1  
+$EndComp
+Text GLabel 4150 2650 1    50   Output ~ 0
+VBAT
+Text GLabel 5050 4350 3    50   Output ~ 0
+FEATHER_RX
+Text GLabel 5150 4350 3    50   Input ~ 0
+FEATHER_TX
+$Comp
+L Omega2-IO-Power-eagle-import:VIN ?
+U 1 1 5E8ACAE6
+P 4350 2550
+F 0 "?" H 4400 2600 50  0001 C CNN
+F 1 "VIN" H 4300 2605 42  0000 L CNN
+F 2 "" H 4350 2550 50  0001 C CNN
+F 3 "" H 4350 2550 50  0001 C CNN
+	1    4350 2550
+	1    0    0    -1  
+$EndComp
+Text GLabel 4150 4350 3    50   BiDi ~ 0
+GPIO0
+Text GLabel 4250 4350 3    50   BiDi ~ 0
+GPIO1
+Text GLabel 4350 4350 3    50   BiDi ~ 0
+GPIO2
+Text GLabel 4450 4350 3    50   BiDi ~ 0
+GPIO3
 $EndSCHEMATC

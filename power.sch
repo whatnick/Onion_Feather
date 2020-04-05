@@ -128,8 +128,8 @@ P 3575 3450
 AR Path="/5E646706/5E652E0F" Ref="P?"  Part="1" 
 AR Path="/5E65196E/5E652E0F" Ref="P1"  Part="1" 
 F 0 "P1" H 3575 3450 50  0001 C CNN
-F 1 "PADNORMAL" H 3575 3450 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3575 3450 50  0001 C CNN
+F 1 "TestPoint" H 3575 3450 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 3575 3450 50  0001 C CNN
 F 3 "" H 3575 3450 50  0001 C CNN
 	1    3575 3450
 	1    0    0    -1  
@@ -614,4 +614,6 @@ Text Label 6880 3470 2    50   ~ 0
 DSEL
 Text GLabel 8165 2305 2    50   Output ~ 0
 5V_BOOST
+Text GLabel 7400 3070 3    50   BiDi ~ 0
+VBAT
 $EndSCHEMATC

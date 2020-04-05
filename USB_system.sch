@@ -190,10 +190,8 @@ Text Label 5060 3100 0    50   ~ 0
 RX
 Text Label 5070 3000 0    50   ~ 0
 TX
-Text GLabel 5220 3000 2    50   Input ~ 0
+Text GLabel 5515 3000 2    50   Input ~ 0
 USB_TX
-Text GLabel 5220 3100 2    50   Output ~ 0
-USB_RX
 Wire Wire Line
 	5000 2900 5220 2900
 Text Label 5220 2900 0    50   ~ 0
@@ -202,4 +200,92 @@ Wire Wire Line
 	5000 3300 5220 3300
 Text Label 5220 3300 0    50   ~ 0
 DTR
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5E8A158E
+P 1265 2410
+F 0 "TP1" H 1323 2528 50  0000 L CNN
+F 1 "TestPoint" H 1323 2437 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 1465 2410 50  0001 C CNN
+F 3 "~" H 1465 2410 50  0001 C CNN
+	1    1265 2410
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5E8A1978
+P 1485 2410
+F 0 "TP2" H 1543 2528 50  0000 L CNN
+F 1 "TestPoint" H 1543 2437 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 1685 2410 50  0001 C CNN
+F 3 "~" H 1685 2410 50  0001 C CNN
+	1    1485 2410
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5E8A1FFD
+P 1690 2410
+F 0 "TP3" H 1748 2528 50  0000 L CNN
+F 1 "TestPoint" H 1748 2437 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 1890 2410 50  0001 C CNN
+F 3 "~" H 1890 2410 50  0001 C CNN
+	1    1690 2410
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5E8A239C
+P 1885 2405
+F 0 "TP4" H 1943 2523 50  0000 L CNN
+F 1 "TestPoint" H 1943 2432 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 2085 2405 50  0001 C CNN
+F 3 "~" H 2085 2405 50  0001 C CNN
+	1    1885 2405
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1265 2410 1265 2580
+Wire Wire Line
+	1485 2410 1485 2580
+Wire Wire Line
+	1690 2410 1690 2580
+Wire Wire Line
+	1885 2405 1885 2575
+$Comp
+L Device:Jumper_NC_Small JP1
+U 1 1 5E8A3F25
+P 5320 3000
+F 0 "JP1" H 5320 3212 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 5320 3121 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 5320 3000 50  0001 C CNN
+F 3 "~" H 5320 3000 50  0001 C CNN
+	1    5320 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP2
+U 1 1 5E8A48AC
+P 5320 3100
+F 0 "JP2" H 5320 3312 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 5320 3221 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 5320 3100 50  0001 C CNN
+F 3 "~" H 5320 3100 50  0001 C CNN
+	1    5320 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5420 3000 5515 3000
+Wire Wire Line
+	5420 3100 5515 3100
+Text GLabel 5515 3100 2    50   Output ~ 0
+USB_RX
+Text Label 1265 2580 0    50   ~ 0
+RX
+Text Label 1485 2580 0    50   ~ 0
+TX
+Text Label 1690 2580 0    50   ~ 0
+DTR
+Text Label 1885 2575 0    50   ~ 0
+RTS
 $EndSCHEMATC

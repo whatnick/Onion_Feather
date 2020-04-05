@@ -8,6 +8,7 @@ Adapter board adding much needed USB , Lipo , ADC's etc to Onion-Omega form fact
 - Ethernet jack with built-in or external pulse transformer - [Amphenol](https://au.mouser.com/ProductDetail/Amphenol-Commercial-Products/RJMG1BD3B8K1ANR?qs=sGAEpiMZZMvQhAhQbXdbBiMgfamRpqKNbIBUiXXy1v4%3D) or [Hanrun](https://www.snapeda.com/parts/HR911105A/DFRobot/view-part/?ref=search&t=HR911105A)
 - Battery charger and buck-boost converter - [BQ25895](http://www.ti.com/product/BQ25895)
 - 8-channel I2C ADC for the ADC pins - [AD7997](https://www.analog.com/en/products/ad7997.html#product-overview)
+- 2-channel I2C ADC for the ADC pins - [MAX11646EUA+](https://au.mouser.com/new/maxim-integrated/maxim-max11646-max11647/) with other Analog pins services by [Onion PCM/PWM](https://docs.onion.io/omega2-docs/generating-pwm-signals.html) pins.
 - Dense 20 pin 1.0 mm pitch board-to-wire connector for all pins - [Molex 203566-2007](https://au.mouser.com/ProductDetail/Molex/203566-2007?qs=sGAEpiMZZMs%252BGHln7q6pm8Vn94ktop%2FJB3denez338oFsDPiNVR1nA%3D%3D)
 - Qwiic format JST-SH I2C bus connector - [Qwiic](https://www.sparkfun.com/qwiic)
 
