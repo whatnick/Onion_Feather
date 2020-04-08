@@ -28,15 +28,9 @@ Wire Wire Line
 Text Label 4575 4500 0    70   ~ 0
 GND
 Wire Wire Line
-	7275 3875 7275 3825
-Wire Wire Line
-	7275 3825 7600 3825
-Wire Wire Line
-	7600 3825 7600 3875
-Wire Wire Line
 	7600 3825 7600 3775
 Wire Wire Line
-	7600 3825 7900 3825
+	7600 3825 7725 3825
 Wire Wire Line
 	7900 3825 7900 4125
 Connection ~ 7600 3825
@@ -80,20 +74,10 @@ Wire Wire Line
 	4450 4400 4850 4400
 Text Label 4550 4400 0    70   ~ 0
 MOSI
-Wire Wire Line
-	7275 4425 7275 4275
-Wire Wire Line
-	7275 4425 6850 4425
 Text Label 8175 4425 0    70   ~ 0
 SDA
-Connection ~ 7275 4425
-Wire Wire Line
-	7600 4325 7600 4275
-Wire Wire Line
-	7600 4325 6850 4325
 Text Label 8175 4325 0    70   ~ 0
 SCL
-Connection ~ 7600 4325
 Wire Wire Line
 	4900 3825 5350 3825
 Text Label 4975 3825 0    70   ~ 0
@@ -124,23 +108,23 @@ $EndComp
 $Comp
 L Omega2-IO-Power-eagle-import:RESISTOR0805-RES R1
 U 1 1 9D727F8A
-P 7275 4075
-F 0 "R1" H 7225 4134 59  0000 L BNN
-F 1 "4.7K" H 7175 3945 59  0000 L BNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7275 4075 50  0001 C CNN
-F 3 "" H 7275 4075 50  0001 C CNN
-	1    7275 4075
+P 7425 4075
+F 0 "R1" H 7375 4134 59  0000 L BNN
+F 1 "4.7K" H 7325 3945 59  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7425 4075 50  0001 C CNN
+F 3 "" H 7425 4075 50  0001 C CNN
+	1    7425 4075
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Omega2-IO-Power-eagle-import:RESISTOR0805-RES R2
 U 1 1 4C4A9837
-P 7600 4075
-F 0 "R2" H 7550 4134 59  0000 L BNN
-F 1 "4.7K" H 7500 3945 59  0000 L BNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7600 4075 50  0001 C CNN
-F 3 "" H 7600 4075 50  0001 C CNN
-	1    7600 4075
+P 7725 4075
+F 0 "R2" H 7675 4134 59  0000 L BNN
+F 1 "4.7K" H 7625 3945 59  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7725 4075 50  0001 C CNN
+F 3 "" H 7725 4075 50  0001 C CNN
+	1    7725 4075
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -195,14 +179,6 @@ Wire Wire Line
 	7175 3425 8825 3425
 Wire Wire Line
 	7175 3325 8825 3325
-Text HLabel 6850 3725 2    50   Output ~ 0
-ETH_TX-
-Text HLabel 6850 3825 2    50   Output ~ 0
-ETH_TX+
-Text HLabel 6850 3925 2    50   Input ~ 0
-ETH_RX-
-Text HLabel 6850 4025 2    50   Input ~ 0
-ETH_RX+
 Text GLabel 6850 3125 2    50   Output ~ 0
 USB_OUT+
 Text GLabel 6850 3225 2    50   Output ~ 0
@@ -235,13 +211,9 @@ Wire Wire Line
 Wire Wire Line
 	8575 4330 8770 4330
 Wire Wire Line
-	7275 4425 8575 4425
-Wire Wire Line
 	8655 4325 8655 4430
 Wire Wire Line
 	8655 4430 8770 4430
-Wire Wire Line
-	7600 4325 8655 4325
 Wire Wire Line
 	8585 4225 8585 4130
 Wire Wire Line
@@ -290,4 +262,47 @@ Text GLabel 6850 4225 2    50   BiDi ~ 0
 GPIO19
 Text GLabel 6850 3525 2    50   BiDi ~ 0
 GPIO38
+Wire Wire Line
+	6850 3725 6925 3725
+Text GLabel 6925 3725 2    50   Input ~ 0
+ETH_TX-
+Wire Wire Line
+	6850 3825 6900 3825
+Wire Wire Line
+	6850 3925 6900 3925
+Wire Wire Line
+	6850 4025 6900 4025
+Text GLabel 6900 3825 2    50   Input ~ 0
+ETH_TX+
+Text GLabel 6900 3925 2    50   Input ~ 0
+ETH_RX-
+Text GLabel 6900 4025 2    50   Input ~ 0
+ETH_RX+
+Wire Wire Line
+	7425 4275 7425 4425
+Connection ~ 7425 4425
+Wire Wire Line
+	7425 4425 8575 4425
+Wire Wire Line
+	6850 4425 7425 4425
+Wire Wire Line
+	7425 3875 7425 3825
+Wire Wire Line
+	7425 3825 7600 3825
+Wire Wire Line
+	7725 3875 7725 3825
+Connection ~ 7725 3825
+Wire Wire Line
+	7725 3825 7900 3825
+Wire Wire Line
+	6850 4325 7725 4325
+Wire Wire Line
+	7725 4275 7725 4325
+Connection ~ 7725 4325
+Wire Wire Line
+	7725 4325 8655 4325
+Wire Wire Line
+	6850 3625 6950 3625
+Text GLabel 6950 3625 2    50   Input ~ 0
+NET_POW
 $EndSCHEMATC
