@@ -195,4 +195,7 @@ Text GLabel 6525 3850 2    50   BiDi ~ 0
 GPIO17
 Text GLabel 6525 3950 2    50   BiDi ~ 0
 GPIO16
+Text GLabel 6525 4050 2    50   Input ~ 0
+GPIO11
+NoConn ~ 4825 4250
 $EndSCHEMATC

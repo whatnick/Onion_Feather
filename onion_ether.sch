@@ -258,4 +258,9 @@ Wire Wire Line
 Connection ~ 3825 1975
 Wire Wire Line
 	3825 1975 5625 1975
+NoConn ~ 5625 3575
+NoConn ~ 5625 3775
+NoConn ~ 5625 4075
+NoConn ~ 5625 4275
+NoConn ~ 5625 4475
 $EndSCHEMATC
