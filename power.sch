@@ -28,13 +28,6 @@ GND
 Wire Wire Line
 	1600 2850 1600 2800
 Wire Wire Line
-	4375 3225 4375 3450
-Wire Wire Line
-	4375 3550 4375 3450
-Connection ~ 4375 3450
-Text Label 4375 3550 0    70   ~ 0
-3V3
-Wire Wire Line
 	3125 3450 3125 3550
 Wire Wire Line
 	3125 3450 3125 3200
@@ -120,19 +113,6 @@ F 3 "" H 4375 3125 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Omega2-IO-Power-eagle-import:PADNORMAL P?
-U 1 1 5E652E0F
-P 4375 3450
-AR Path="/5E646706/5E652E0F" Ref="P?"  Part="1" 
-AR Path="/5E65196E/5E652E0F" Ref="P1"  Part="1" 
-F 0 "P1" H 4375 3450 50  0001 C CNN
-F 1 "TestPoint" H 4375 3450 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4375 3450 50  0001 C CNN
-F 3 "" H 4375 3450 50  0001 C CNN
-	1    4375 3450
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x02 J3
 U 1 1 5E6546D5
 P 8060 2970
@@ -193,8 +173,6 @@ F 3 "http://www.diodes.com/datasheets/AP1117.pdf" H 3925 3200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3125 3450 3525 3450
-Wire Wire Line
-	4125 3450 4375 3450
 $Comp
 L Battery_Management:BQ25895RTW U4
 U 1 1 5E815E94
@@ -259,73 +237,6 @@ F 3 "" H 8110 2770 50  0001 C CNN
 	1    8110 2770
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	5780 2370 5375 2370
-Text Label 5200 2370 2    50   ~ 0
-VIN
-$Comp
-L Device:C_Small C3
-U 1 1 5E8276CA
-P 5045 2470
-F 0 "C3" H 5137 2516 50  0000 L CNN
-F 1 "10u" H 5137 2425 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5045 2470 50  0001 C CNN
-F 3 "~" H 5045 2470 50  0001 C CNN
-	1    5045 2470
-	1    0    0    -1  
-$EndComp
-Connection ~ 5045 2370
-Wire Wire Line
-	5045 2370 4905 2370
-$Comp
-L Device:C_Small C4
-U 1 1 5E8283B3
-P 5215 2470
-F 0 "C4" H 5307 2516 50  0000 L CNN
-F 1 "10u" H 5307 2425 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5215 2470 50  0001 C CNN
-F 3 "~" H 5215 2470 50  0001 C CNN
-	1    5215 2470
-	1    0    0    -1  
-$EndComp
-Connection ~ 5215 2370
-Wire Wire Line
-	5215 2370 5045 2370
-$Comp
-L Device:C_Small C5
-U 1 1 5E82881B
-P 5375 2470
-F 0 "C5" H 5467 2516 50  0000 L CNN
-F 1 "10u" H 5467 2425 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5375 2470 50  0001 C CNN
-F 3 "~" H 5375 2470 50  0001 C CNN
-	1    5375 2470
-	1    0    0    -1  
-$EndComp
-Connection ~ 5375 2370
-Wire Wire Line
-	5375 2370 5215 2370
-Wire Wire Line
-	5375 2570 5215 2570
-Wire Wire Line
-	5215 2570 5215 2565
-Connection ~ 5215 2570
-Wire Wire Line
-	5215 2570 5045 2570
-Wire Wire Line
-	5045 2570 4965 2570
-Connection ~ 5045 2570
-$Comp
-L power:GND #PWR0103
-U 1 1 5E82A94A
-P 4965 2570
-F 0 "#PWR0103" H 4965 2320 50  0001 C CNN
-F 1 "GND" V 4970 2442 50  0000 R CNN
-F 2 "" H 4965 2570 50  0001 C CNN
-F 3 "" H 4965 2570 50  0001 C CNN
-	1    4965 2570
-	0    1    1    0   
-$EndComp
 $Comp
 L Device:C_Small C6
 U 1 1 5E82B8FF
@@ -367,8 +278,8 @@ $Comp
 L Device:D_Schottky D1
 U 1 1 5E8308DD
 P 6915 2455
-F 0 "D1" V 6869 2534 50  0000 L CNN
-F 1 "D_Schottky" V 6960 2534 50  0000 L CNN
+F 0 "D1" V 6835 2315 50  0000 L CNN
+F 1 "D_Schottky" V 6960 2715 50  0000 L CNN
 F 2 "Diode_SMD:D_SOD-123" H 6915 2455 50  0001 C CNN
 F 3 "~" H 6915 2455 50  0001 C CNN
 	1    6915 2455
@@ -545,14 +456,6 @@ Text GLabel 5780 3270 0    50   Input ~ 0
 SDA
 Text GLabel 5780 3370 0    50   Input ~ 0
 SCL
-Wire Wire Line
-	5780 3470 5390 3470
-Wire Wire Line
-	5780 3570 5390 3570
-Wire Wire Line
-	5780 3670 5390 3670
-Wire Wire Line
-	5780 3770 5390 3770
 Text Label 5390 3470 2    50   ~ 0
 INT
 Text Label 5390 3570 2    50   ~ 0
@@ -561,12 +464,6 @@ Text Label 5390 3670 2    50   ~ 0
 ~CE
 Text Label 5390 3770 2    50   ~ 0
 ~QON
-Wire Wire Line
-	5780 2870 5390 2870
-Text Label 5390 2870 2    50   ~ 0
-ILIM
-Wire Wire Line
-	5780 3070 5390 3070
 Text Label 5390 3070 2    50   ~ 0
 STAT
 Text Label 2300 3150 2    50   ~ 0
@@ -581,25 +478,8 @@ Text Label 5505 2570 0    50   ~ 0
 USB_IN+
 Text Label 5505 2670 0    50   ~ 0
 USB_IN-
-Wire Wire Line
-	1900 3050 2190 3050
-Wire Wire Line
-	2190 3050 2190 2835
-Text Label 2190 2835 2    50   ~ 0
+Text Label 2065 3050 2    50   ~ 0
 ID
-$Comp
-L Omega2-IO-Power-eagle-import:VIN #U$?
-U 1 1 5E87F320
-P 4905 2270
-AR Path="/5E646706/5E87F320" Ref="#U$?"  Part="1" 
-AR Path="/5E65196E/5E87F320" Ref="#U$0103"  Part="1" 
-F 0 "#U$0103" H 4905 2270 50  0001 C CNN
-F 1 "VIN" H 4845 2310 42  0000 L BNN
-F 2 "" H 4905 2270 50  0001 C CNN
-F 3 "" H 4905 2270 50  0001 C CNN
-	1    4905 2270
-	1    0    0    -1  
-$EndComp
 Text Label 7135 3070 0    50   ~ 0
 VBAT
 Wire Wire Line
@@ -610,8 +490,6 @@ Text GLabel 8165 2305 2    50   Output ~ 0
 5V_BOOST
 Text GLabel 7400 3070 3    50   BiDi ~ 0
 VBAT
-Wire Wire Line
-	1900 3450 2450 3450
 $Comp
 L Power_Protection:SP0503BAHT D5
 U 1 1 5E926164
@@ -625,7 +503,6 @@ F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/do
 $EndComp
 Wire Wire Line
 	2450 3450 2450 3575
-Connection ~ 2450 3450
 Wire Wire Line
 	2450 3450 3125 3450
 Wire Wire Line
@@ -658,4 +535,241 @@ Wire Wire Line
 Connection ~ 1600 2800
 Wire Wire Line
 	1600 2800 1600 2750
+Text Label 5390 2870 2    50   ~ 0
+ILIM
+$Comp
+L Omega2-IO-Power-eagle-import:VIN #U$?
+U 1 1 5E87F320
+P 4905 2270
+AR Path="/5E646706/5E87F320" Ref="#U$?"  Part="1" 
+AR Path="/5E65196E/5E87F320" Ref="#U$0103"  Part="1" 
+F 0 "#U$0103" H 4905 2270 50  0001 C CNN
+F 1 "VIN" H 4845 2310 42  0000 L BNN
+F 2 "" H 4905 2270 50  0001 C CNN
+F 3 "" H 4905 2270 50  0001 C CNN
+	1    4905 2270
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5E82A94A
+P 4965 2570
+F 0 "#PWR0103" H 4965 2320 50  0001 C CNN
+F 1 "GND" V 4970 2442 50  0000 R CNN
+F 2 "" H 4965 2570 50  0001 C CNN
+F 3 "" H 4965 2570 50  0001 C CNN
+	1    4965 2570
+	0    1    1    0   
+$EndComp
+Connection ~ 5045 2570
+Wire Wire Line
+	5045 2570 4965 2570
+Wire Wire Line
+	5215 2570 5045 2570
+Connection ~ 5215 2570
+Wire Wire Line
+	5215 2570 5215 2565
+Wire Wire Line
+	5375 2570 5215 2570
+Wire Wire Line
+	5375 2370 5215 2370
+Connection ~ 5375 2370
+Wire Wire Line
+	5215 2370 5045 2370
+Connection ~ 5215 2370
+Wire Wire Line
+	5045 2370 4905 2370
+Connection ~ 5045 2370
+Text Label 5200 2370 2    50   ~ 0
+VIN
+Wire Wire Line
+	5780 2370 5375 2370
+$Comp
+L Device:C_Small C4
+U 1 1 5E8283B3
+P 5215 2470
+F 0 "C4" H 5307 2516 50  0000 L CNN
+F 1 "10u" H 5307 2425 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5215 2470 50  0001 C CNN
+F 3 "~" H 5215 2470 50  0001 C CNN
+	1    5215 2470
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 5E8276CA
+P 5045 2470
+F 0 "C3" H 5137 2516 50  0000 L CNN
+F 1 "10u" H 5137 2425 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5045 2470 50  0001 C CNN
+F 3 "~" H 5045 2470 50  0001 C CNN
+	1    5045 2470
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 5E82881B
+P 5375 2470
+F 0 "C5" H 5467 2516 50  0000 L CNN
+F 1 "10u" H 5467 2425 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5375 2470 50  0001 C CNN
+F 3 "~" H 5375 2470 50  0001 C CNN
+	1    5375 2470
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E942F83
+P 5110 2870
+AR Path="/5E656C4B/5E942F83" Ref="TP?"  Part="1" 
+AR Path="/5E65196E/5E942F83" Ref="TP8"  Part="1" 
+F 0 "TP8" V 5160 2970 50  0000 L CNN
+F 1 "TestPoint" V 5035 2795 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5310 2870 50  0001 C CNN
+F 3 "~" H 5310 2870 50  0001 C CNN
+	1    5110 2870
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5140 3070 5780 3070
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E950490
+P 5140 3070
+AR Path="/5E656C4B/5E950490" Ref="TP?"  Part="1" 
+AR Path="/5E65196E/5E950490" Ref="TP9"  Part="1" 
+F 0 "TP9" V 5190 3170 50  0000 L CNN
+F 1 "TestPoint" V 5065 2995 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5340 3070 50  0001 C CNN
+F 3 "~" H 5340 3070 50  0001 C CNN
+	1    5140 3070
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5110 2870 5780 2870
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E95646D
+P 5180 3470
+AR Path="/5E656C4B/5E95646D" Ref="TP?"  Part="1" 
+AR Path="/5E65196E/5E95646D" Ref="TP10"  Part="1" 
+F 0 "TP10" V 5230 3570 50  0000 L CNN
+F 1 "TestPoint" V 5105 3395 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5380 3470 50  0001 C CNN
+F 3 "~" H 5380 3470 50  0001 C CNN
+	1    5180 3470
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5180 3470 5780 3470
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E95A282
+P 5040 3670
+AR Path="/5E656C4B/5E95A282" Ref="TP?"  Part="1" 
+AR Path="/5E65196E/5E95A282" Ref="TP5"  Part="1" 
+F 0 "TP5" V 5090 3770 50  0000 L CNN
+F 1 "TestPoint" V 4965 3595 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5240 3670 50  0001 C CNN
+F 3 "~" H 5240 3670 50  0001 C CNN
+	1    5040 3670
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E95B298
+P 5040 3865
+AR Path="/5E656C4B/5E95B298" Ref="TP?"  Part="1" 
+AR Path="/5E65196E/5E95B298" Ref="TP6"  Part="1" 
+F 0 "TP6" V 5090 3965 50  0000 L CNN
+F 1 "TestPoint" V 4965 3790 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5240 3865 50  0001 C CNN
+F 3 "~" H 5240 3865 50  0001 C CNN
+	1    5040 3865
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E95B987
+P 5050 4060
+AR Path="/5E656C4B/5E95B987" Ref="TP?"  Part="1" 
+AR Path="/5E65196E/5E95B987" Ref="TP7"  Part="1" 
+F 0 "TP7" V 5100 4160 50  0000 L CNN
+F 1 "TestPoint" V 4975 3985 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5250 4060 50  0001 C CNN
+F 3 "~" H 5250 4060 50  0001 C CNN
+	1    5050 4060
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5105 3570 5105 3670
+Wire Wire Line
+	5105 3670 5040 3670
+Wire Wire Line
+	5105 3570 5780 3570
+Wire Wire Line
+	5200 3670 5200 3865
+Wire Wire Line
+	5200 3865 5040 3865
+Wire Wire Line
+	5200 3670 5780 3670
+Wire Wire Line
+	5305 3770 5305 4060
+Wire Wire Line
+	5305 4060 5050 4060
+Wire Wire Line
+	5305 3770 5780 3770
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E96B04E
+P 6880 3470
+AR Path="/5E656C4B/5E96B04E" Ref="TP?"  Part="1" 
+AR Path="/5E65196E/5E96B04E" Ref="TP11"  Part="1" 
+F 0 "TP11" V 6805 3575 50  0000 L CNN
+F 1 "TestPoint" V 6955 3580 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7080 3470 50  0001 C CNN
+F 3 "~" H 7080 3470 50  0001 C CNN
+	1    6880 3470
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E96C0A9
+P 6880 3770
+AR Path="/5E656C4B/5E96C0A9" Ref="TP?"  Part="1" 
+AR Path="/5E65196E/5E96C0A9" Ref="TP12"  Part="1" 
+F 0 "TP12" V 6810 3860 50  0000 L CNN
+F 1 "TestPoint" V 6960 3855 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7080 3770 50  0001 C CNN
+F 3 "~" H 7080 3770 50  0001 C CNN
+	1    6880 3770
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1900 3450 2450 3450
+Wire Wire Line
+	2450 3450 2450 3455
+Connection ~ 2450 3450
+Wire Wire Line
+	4375 3225 4375 3450
+Wire Wire Line
+	4125 3450 4375 3450
+Connection ~ 4375 3450
+Wire Wire Line
+	4375 3450 4375 3550
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E979121
+P 2340 3050
+AR Path="/5E656C4B/5E979121" Ref="TP?"  Part="1" 
+AR Path="/5E65196E/5E979121" Ref="TP13"  Part="1" 
+F 0 "TP13" V 2390 3150 50  0000 L CNN
+F 1 "TestPoint" V 2265 2975 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 2540 3050 50  0001 C CNN
+F 3 "~" H 2540 3050 50  0001 C CNN
+	1    2340 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1900 3050 2340 3050
 $EndSCHEMATC

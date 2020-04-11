@@ -13,8 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Wire Line
-	6850 2925 7150 2925
 Text Label 6950 2925 0    70   ~ 0
 GND
 Text Label 8175 4225 0    70   ~ 0
@@ -305,4 +303,38 @@ Text GLabel 6950 3625 2    50   Input ~ 0
 NET_POW
 Text GLabel 5350 3725 0    50   Output ~ 0
 FEATHER_TX
+Text GLabel 4900 3925 0    50   Output ~ 0
+MOSI
+Text GLabel 4900 3825 0    50   Input ~ 0
+MISO
+Text GLabel 4900 4025 0    50   Output ~ 0
+SCLK
+Text GLabel 4900 4125 0    50   Output ~ 0
+CS
+$Comp
+L Omega2-IO-Power-eagle-import:3.3V #U$0104
+U 1 1 5E933EB7
+P 4100 2850
+F 0 "#U$0104" H 4100 2850 50  0001 C CNN
+F 1 "3.3V" H 4040 2890 42  0000 L BNN
+F 2 "" H 4100 2850 50  0001 C CNN
+F 3 "" H 4100 2850 50  0001 C CNN
+	1    4100 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 5E934CB9
+P 7475 2950
+F 0 "#PWR0111" H 7475 2700 50  0001 C CNN
+F 1 "GND" H 7480 2777 50  0000 C CNN
+F 2 "" H 7475 2950 50  0001 C CNN
+F 3 "" H 7475 2950 50  0001 C CNN
+	1    7475 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7475 2925 7475 2950
+Wire Wire Line
+	6850 2925 7475 2925
 $EndSCHEMATC

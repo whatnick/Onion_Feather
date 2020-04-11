@@ -100,30 +100,24 @@ GPIO19
 $Comp
 L MAX11646EUA+T:MAX11646EUA+T IC1
 U 1 1 5E8DBC3B
-P 2175 2875
-F 0 "IC1" H 2725 3140 50  0000 C CNN
-F 1 "MAX11646EUA+T" H 2725 3049 50  0000 C CNN
-F 2 "SOP65P490X110-8N" H 3125 2975 50  0001 L CNN
-F 3 "https://datasheets.maximintegrated.com/en/ds/MAX11646-MAX11647.pdf" H 3125 2875 50  0001 L CNN
-F 4 "Low-Power, 1-/2-Channel, I2C, 10-Bit ADCs  ADCs" H 3125 2775 50  0001 L CNN "Description"
-F 5 "" H 3125 2675 50  0001 L CNN "Height"
-F 6 "MAX11646EUA+T-ND" H 3125 2575 50  0001 L CNN "DigiKey Part Number"
-F 7 "https://www.digikey.co.uk/product-detail/en/maxim-integrated/MAX11646EUA-T/MAX11646EUA-T-ND/2279679" H 3125 2475 50  0001 L CNN "DigiKey Price/Stock"
-F 8 "Maxim Integrated" H 3125 2375 50  0001 L CNN "Manufacturer_Name"
-F 9 "MAX11646EUA+T" H 3125 2275 50  0001 L CNN "Manufacturer_Part_Number"
-	1    2175 2875
+P 2100 2875
+F 0 "IC1" H 2650 3140 50  0000 C CNN
+F 1 "MAX11646EUA+T" H 2650 3049 50  0000 C CNN
+F 2 "SOP65P490X110-8N" H 3050 2975 50  0001 L CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX11646-MAX11647.pdf" H 3050 2875 50  0001 L CNN
+F 4 "Low-Power, 1-/2-Channel, I2C, 10-Bit ADCs  ADCs" H 3050 2775 50  0001 L CNN "Description"
+F 5 "" H 3050 2675 50  0001 L CNN "Height"
+F 6 "MAX11646EUA+T-ND" H 3050 2575 50  0001 L CNN "DigiKey Part Number"
+F 7 "https://www.digikey.co.uk/product-detail/en/maxim-integrated/MAX11646EUA-T/MAX11646EUA-T-ND/2279679" H 3050 2475 50  0001 L CNN "DigiKey Price/Stock"
+F 8 "Maxim Integrated" H 3050 2375 50  0001 L CNN "Manufacturer_Name"
+F 9 "MAX11646EUA+T" H 3050 2275 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2100 2875
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3275 3075 3500 3075
-Wire Wire Line
-	3275 3175 3500 3175
 Text GLabel 3500 3175 2    50   Output ~ 0
 SCL
 Text GLabel 3500 3075 2    50   Output ~ 0
 SDA
-Wire Wire Line
-	3275 2975 3375 2975
 Wire Wire Line
 	3375 2975 3375 3375
 $Comp
@@ -175,21 +169,21 @@ Wire Wire Line
 	3375 2650 3375 2700
 Text GLabel 4825 2950 0    50   Input ~ 0
 AREF
-Text GLabel 2125 3175 0    50   Input ~ 0
+Text GLabel 2050 3175 0    50   Input ~ 0
 AREF
 Wire Wire Line
-	2125 3175 2175 3175
+	2050 3175 2100 3175
 Wire Wire Line
-	2175 2875 2100 2875
+	2100 2875 2025 2875
 Wire Wire Line
-	2175 2975 2100 2975
+	2100 2975 2025 2975
 Text GLabel 4825 3550 0    50   Input ~ 0
 A0
 Text GLabel 4825 3650 0    50   Input ~ 0
 A1
-Text GLabel 2100 2875 0    50   Input ~ 0
+Text GLabel 2025 2875 0    50   Input ~ 0
 A0
-Text GLabel 2100 2975 0    50   Input ~ 0
+Text GLabel 2025 2975 0    50   Input ~ 0
 A1
 Text GLabel 6525 3850 2    50   BiDi ~ 0
 GPIO17
@@ -198,4 +192,12 @@ GPIO16
 Text GLabel 6525 4050 2    50   Input ~ 0
 GPIO11
 NoConn ~ 4825 4250
+Wire Wire Line
+	3200 2875 3275 2875
+Wire Wire Line
+	3200 2975 3375 2975
+Wire Wire Line
+	3200 3075 3500 3075
+Wire Wire Line
+	3200 3175 3500 3175
 $EndSCHEMATC
