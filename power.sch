@@ -470,10 +470,6 @@ Text Label 2300 3150 2    50   ~ 0
 USB_IN-
 Text Label 2250 3250 2    50   ~ 0
 USB_IN+
-Wire Wire Line
-	5780 2570 5505 2570
-Wire Wire Line
-	5780 2670 5505 2670
 Text Label 5505 2570 0    50   ~ 0
 USB_IN+
 Text Label 5505 2670 0    50   ~ 0
@@ -763,7 +759,7 @@ U 1 1 5E979121
 P 2340 3050
 AR Path="/5E656C4B/5E979121" Ref="TP?"  Part="1" 
 AR Path="/5E65196E/5E979121" Ref="TP13"  Part="1" 
-F 0 "TP13" V 2390 3150 50  0000 L CNN
+F 0 "TP13" V 2195 3015 50  0000 L CNN
 F 1 "TestPoint" V 2265 2975 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 2540 3050 50  0001 C CNN
 F 3 "~" H 2540 3050 50  0001 C CNN
@@ -772,4 +768,24 @@ F 3 "~" H 2540 3050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1900 3050 2340 3050
+Text GLabel 2250 3250 2    50   Input ~ 0
+USB_IN+
+Text GLabel 2350 3150 2    50   Input ~ 0
+USB_IN-
+Wire Wire Line
+	5415 2570 5415 2645
+Wire Wire Line
+	5415 2645 4630 2645
+Wire Wire Line
+	5415 2570 5780 2570
+Wire Wire Line
+	4755 2670 5780 2670
+Text GLabel 4630 2645 0    50   Input ~ 0
+USB_IN+
+Text GLabel 4630 2775 0    50   Input ~ 0
+USB_IN-
+Wire Wire Line
+	4755 2670 4755 2775
+Wire Wire Line
+	4755 2775 4630 2775
 $EndSCHEMATC
