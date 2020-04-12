@@ -1,0 +1,29 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model MAX11646EUA+T
+#/271935/49474/2.46/8/0/Integrated Circuit
+DEF MAX11646EUA+T IC 0 30 Y Y 1 F N
+F0 "IC" 950 300 50 H V L CNN
+F1 "MAX11646EUA+T" 950 200 50 H V L CNN
+F2 "SOP65P490X110-8N" 950 100 50 H I L CNN
+F3 "https://datasheets.maximintegrated.com/en/ds/MAX11646-MAX11647.pdf" 950 0 50 H I L CNN
+F4 "Low-Power, 1-/2-Channel, I2C, 10-Bit ADCs  ADCs" 950 -100 50 H I L CNN "Description"
+F5 "" 950 -200 50 H I L CNN "Height"
+F6 "MAX11646EUA+T-ND" 950 -300 50 H I L CNN "DigiKey Part Number"
+F7 "https://www.digikey.co.uk/product-detail/en/maxim-integrated/MAX11646EUA-T/MAX11646EUA-T-ND/2279679" 950 -400 50 H I L CNN "DigiKey Price/Stock"
+F8 "Maxim Integrated" 950 -500 50 H I L CNN "Manufacturer_Name"
+F9 "MAX11646EUA+T" 950 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X AIN0 1 0 0 200 R 50 50 0 0 U
+X AIN1 2 0 -100 200 R 50 50 0 0 U
+X N.C. 3 0 -200 200 R 50 50 0 0 N
+X REF 4 0 -300 200 R 50 50 0 0 U
+X SCL 5 1100 -300 200 L 50 50 0 0 U
+X SDA 6 1100 -200 200 L 50 50 0 0 U
+X GND 7 1100 -100 200 L 50 50 0 0 U
+X VDD 8 1100 0 200 L 50 50 0 0 U
+P 5 0 1 6 200 100 900 100 900 -400 200 -400 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library
