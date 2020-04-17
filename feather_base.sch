@@ -64,7 +64,7 @@ F 3 "" H 4825 3050 50  0001 C CNN
 	1    4825 3050
 	0    1    1    0   
 $EndComp
-Text GLabel 6525 3150 2    50   Output ~ 0
+Text GLabel 6700 3150 2    50   Output ~ 0
 VBAT
 Text GLabel 4825 4050 0    50   Output ~ 0
 FEATHER_RX
@@ -200,4 +200,39 @@ Wire Wire Line
 	3200 3075 3500 3075
 Wire Wire Line
 	3200 3175 3500 3175
+$Comp
+L Device:D_Schottky D2
+U 1 1 5E9887A9
+P 7025 2950
+F 0 "D2" H 7025 2734 50  0000 C CNN
+F 1 "MBR130T3G" H 7025 2825 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 7025 2950 50  0001 C CNN
+F 3 "~" H 7025 2950 50  0001 C CNN
+	1    7025 2950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6525 3150 6625 3150
+Wire Wire Line
+	6625 3150 6625 2950
+Wire Wire Line
+	6625 2950 6875 2950
+Connection ~ 6625 3150
+Wire Wire Line
+	6625 3150 6700 3150
+Wire Wire Line
+	7425 2900 7425 2950
+Wire Wire Line
+	7175 2950 7425 2950
+$Comp
+L Omega2-IO-Power-eagle-import:VIN #?
+U 1 1 5E9918C8
+P 7425 2800
+F 0 "#?" H 7475 2850 50  0001 C CNN
+F 1 "VIN" H 7375 2855 42  0000 L CNN
+F 2 "" H 7425 2800 50  0001 C CNN
+F 3 "" H 7425 2800 50  0001 C CNN
+	1    7425 2800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
