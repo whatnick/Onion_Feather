@@ -1,6 +1,14 @@
 # Onion-Omega 2 - Feather Adapter
 Adapter board adding much needed USB , Lipo , ADC's etc to Onion-Omega form factor and converting it to an Adafruit Feather
 
+## Renders
+
+**Top Render**
+![top render](doc/WIP_render_top.PNG)
+
+**Bottom Render**
+![bottom render](doc/WIP_render_bottom.PNG)
+
 ## Roadmap Features
 - USB-Serial adapter on-board for direct access to Onion Serial port - [CP2102](https://au.mouser.com/ProductDetail/Silicon-Labs/CP2102N-A02-GQFN20?qs=sGAEpiMZZMtv%252Bwxsgy%2FhiN7Hc8YFqmm37POrUy82J6M%3D)
 - [3.3v](http://www.ti.com/product/TPS63001) and [5v](http://www.ti.com/product/TPS63002) power rails with buck-boost converters and power-path IC's
