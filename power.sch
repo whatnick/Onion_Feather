@@ -131,6 +131,7 @@ F 0 "USB1" H 1370 3147 50  0000 R CNN
 F 1 "USB_B_Micro" H 1370 3238 50  0000 R CNN
 F 2 "Connector_USB:USB_Micro-AB_Molex_47590-0001" H 1750 3200 50  0001 C CNN
 F 3 "~" H 1750 3200 50  0001 C CNN
+F 4 "47590-0001" H 1600 3250 50  0001 C CNN "manf#"
 	1    1600 3250
 	1    0    0    1   
 $EndComp
@@ -168,6 +169,7 @@ F 0 "U2" H 3825 3692 50  0000 C CNN
 F 1 "AP1117-33" H 3825 3601 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 3825 3650 50  0001 C CNN
 F 3 "http://www.diodes.com/datasheets/AP1117.pdf" H 3925 3200 50  0001 C CNN
+F 4 "TLV1117-33IDCYR" H 3825 3450 50  0001 C CNN "manf#"
 	1    3825 3450
 	1    0    0    -1  
 $EndComp
@@ -181,6 +183,7 @@ F 0 "U4" H 6180 4037 50  0000 C CNN
 F 1 "BQ25895RTW" H 6180 3946 50  0000 C CNN
 F 2 "Package_DFN_QFN:Texas_S-PWQFN-N24_EP2.7x2.7mm_ThermalVias" H 6080 4070 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/bq25895.pdf" H 5980 3870 50  0001 C CNN
+F 4 "BQ25895RTW" H 6180 3070 50  0001 C CNN "manf#"
 	1    6180 3070
 	1    0    0    -1  
 $EndComp
@@ -402,6 +405,7 @@ F 0 "L1" V 7260 2605 50  0000 C CNN
 F 1 "2.2u" V 7169 2605 50  0000 C CNN
 F 2 "Inductor_SMD:L_Coilcraft_XAL5030" H 7075 2605 50  0001 C CNN
 F 3 "~" H 7075 2605 50  0001 C CNN
+F 4 "XAL5030-222MEC" H 7075 2605 50  0001 C CNN "manf#"
 	1    7075 2605
 	0    -1   -1   0   
 $EndComp
@@ -623,6 +627,7 @@ F 0 "TP8" V 5160 2970 50  0000 L CNN
 F 1 "TestPoint" V 5035 2795 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5310 2870 50  0001 C CNN
 F 3 "~" H 5310 2870 50  0001 C CNN
+F 4 " " H 5110 2870 50  0001 C CNN "DNP"
 	1    5110 2870
 	0    -1   -1   0   
 $EndComp
@@ -638,6 +643,7 @@ F 0 "TP9" V 5190 3170 50  0000 L CNN
 F 1 "TestPoint" V 5065 2995 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5340 3070 50  0001 C CNN
 F 3 "~" H 5340 3070 50  0001 C CNN
+F 4 " " H 5140 3070 50  0001 C CNN "DNP"
 	1    5140 3070
 	0    -1   -1   0   
 $EndComp
@@ -653,6 +659,7 @@ F 0 "TP10" V 5230 3570 50  0000 L CNN
 F 1 "TestPoint" V 5105 3395 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5380 3470 50  0001 C CNN
 F 3 "~" H 5380 3470 50  0001 C CNN
+F 4 " " H 5180 3470 50  0001 C CNN "DNP"
 	1    5180 3470
 	0    -1   -1   0   
 $EndComp
@@ -668,6 +675,7 @@ F 0 "TP5" V 5090 3770 50  0000 L CNN
 F 1 "TestPoint" V 4965 3595 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5240 3670 50  0001 C CNN
 F 3 "~" H 5240 3670 50  0001 C CNN
+F 4 " " H 5040 3670 50  0001 C CNN "DNP"
 	1    5040 3670
 	0    -1   -1   0   
 $EndComp
@@ -681,6 +689,7 @@ F 0 "TP6" V 5090 3965 50  0000 L CNN
 F 1 "TestPoint" V 4965 3790 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5240 3865 50  0001 C CNN
 F 3 "~" H 5240 3865 50  0001 C CNN
+F 4 " " H 5040 3865 50  0001 C CNN "DNP"
 	1    5040 3865
 	0    -1   -1   0   
 $EndComp
@@ -694,6 +703,7 @@ F 0 "TP7" V 5100 4160 50  0000 L CNN
 F 1 "TestPoint" V 4975 3985 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5250 4060 50  0001 C CNN
 F 3 "~" H 5250 4060 50  0001 C CNN
+F 4 " " H 5050 4060 50  0001 C CNN "DNP"
 	1    5050 4060
 	0    -1   -1   0   
 $EndComp
@@ -725,6 +735,7 @@ F 0 "TP11" V 6805 3575 50  0000 L CNN
 F 1 "TestPoint" V 6955 3580 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7080 3470 50  0001 C CNN
 F 3 "~" H 7080 3470 50  0001 C CNN
+F 4 " " H 6880 3470 50  0001 C CNN "DNP"
 	1    6880 3470
 	0    1    1    0   
 $EndComp
@@ -738,6 +749,7 @@ F 0 "TP12" V 6810 3860 50  0000 L CNN
 F 1 "TestPoint" V 6960 3855 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7080 3770 50  0001 C CNN
 F 3 "~" H 7080 3770 50  0001 C CNN
+F 4 " " H 6880 3770 50  0001 C CNN "DNP"
 	1    6880 3770
 	0    1    1    0   
 $EndComp
@@ -763,6 +775,7 @@ F 0 "TP13" V 2195 3015 50  0000 L CNN
 F 1 "TestPoint" V 2265 2975 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 2540 3050 50  0001 C CNN
 F 3 "~" H 2540 3050 50  0001 C CNN
+F 4 " " H 2340 3050 50  0001 C CNN "DNP"
 	1    2340 3050
 	0    1    1    0   
 $EndComp

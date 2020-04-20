@@ -23,6 +23,7 @@ F 0 "MS1" H 5025 2550 45  0001 C CNN
 F 1 "ADAFRUIT_FEATHERWING" H 5025 2550 45  0001 C CNN
 F 2 "footprints:adafruit_featherwing" H 5025 2550 50  0001 C CNN
 F 3 "" H 5025 2550 50  0001 C CNN
+F 4 " " H 5025 2550 50  0001 C CNN "DNP"
 	1    5025 2550
 	0    1    1    0   
 $EndComp
@@ -111,6 +112,7 @@ F 6 "MAX11646EUA+T-ND" H 3050 2575 50  0001 L CNN "DigiKey Part Number"
 F 7 "https://www.digikey.co.uk/product-detail/en/maxim-integrated/MAX11646EUA-T/MAX11646EUA-T-ND/2279679" H 3050 2475 50  0001 L CNN "DigiKey Price/Stock"
 F 8 "Maxim Integrated" H 3050 2375 50  0001 L CNN "Manufacturer_Name"
 F 9 "MAX11646EUA+T" H 3050 2275 50  0001 L CNN "Manufacturer_Part_Number"
+F 10 "MAX11646EUA+T" H 2100 2875 50  0001 C CNN "manf#"
 	1    2100 2875
 	1    0    0    -1  
 $EndComp

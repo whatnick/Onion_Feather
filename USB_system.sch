@@ -130,6 +130,7 @@ F 0 "U3" H 4400 4381 50  0000 C CNN
 F 1 "CP2102N-A01-GQFN24" H 4400 4290 50  0000 C CNN
 F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 4850 2500 50  0001 L CNN
 F 3 "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf" H 4450 2250 50  0001 C CNN
+F 4 "CP2102N-A01-GQFN24R" H 4400 3300 50  0001 C CNN "manf#"
 	1    4400 3300
 	1    0    0    -1  
 $EndComp
@@ -199,6 +200,7 @@ F 0 "TP1" H 1323 2528 50  0000 L CNN
 F 1 "TestPoint" H 1323 2437 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 1465 2410 50  0001 C CNN
 F 3 "~" H 1465 2410 50  0001 C CNN
+F 4 " " H 1265 2410 50  0001 C CNN "DNP"
 	1    1265 2410
 	1    0    0    -1  
 $EndComp
@@ -210,6 +212,7 @@ F 0 "TP2" H 1543 2528 50  0000 L CNN
 F 1 "TestPoint" H 1543 2437 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 1685 2410 50  0001 C CNN
 F 3 "~" H 1685 2410 50  0001 C CNN
+F 4 " " H 1485 2410 50  0001 C CNN "DNP"
 	1    1485 2410
 	1    0    0    -1  
 $EndComp
@@ -221,6 +224,7 @@ F 0 "TP3" H 1748 2528 50  0000 L CNN
 F 1 "TestPoint" H 1748 2437 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 1890 2410 50  0001 C CNN
 F 3 "~" H 1890 2410 50  0001 C CNN
+F 4 " " H 1690 2410 50  0001 C CNN "DNP"
 	1    1690 2410
 	1    0    0    -1  
 $EndComp
@@ -232,6 +236,7 @@ F 0 "TP4" H 1943 2523 50  0000 L CNN
 F 1 "TestPoint" H 1943 2432 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 2085 2405 50  0001 C CNN
 F 3 "~" H 2085 2405 50  0001 C CNN
+F 4 " " H 1885 2405 50  0001 C CNN "DNP"
 	1    1885 2405
 	1    0    0    -1  
 $EndComp
@@ -323,6 +328,7 @@ F 10 "1869924" H 10125 2875 50  0001 L CNN "RS Part Number"
 F 11 "http://uk.rs-online.com/web/p/products/1869924" H 10125 2775 50  0001 L CNN "RS Price/Stock"
 F 12 "70341539" H 10125 2675 50  0001 L CNN "Allied_Number"
 F 13 "http://www.alliedelec.com/on-semiconductor-stf202-22t1g/70341539/" H 10125 2575 50  0001 L CNN "Allied Price/Stock"
+F 14 "STF202-22T1G" H 8875 3575 50  0001 C CNN "manf#"
 	1    8875 3575
 	-1   0    0    1   
 $EndComp
