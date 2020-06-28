@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\Tisham\Documents\kicad\Onion_Feather\Onion_Feather.sch)
-    (date "24/04/2020 10:00:41 PM")
+    (date "28/06/2020 10:21:13 AM")
     (tool "Eeschema (5.1.5)-3")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -195,7 +195,7 @@
       (tstamp 5E648B20))
     (comp (ref IC1)
       (value MAX11646EUA+T)
-      (footprint SOP65P490X110-8N)
+      (footprint footprints:SOP65P490X110-8N)
       (datasheet https://datasheets.maximintegrated.com/en/ds/MAX11646-MAX11647.pdf)
       (fields
         (field (name Description) "Low-Power, 1-/2-Channel, I2C, 10-Bit ADCs  ADCs")
@@ -300,7 +300,7 @@
       (footprint Capacitor_SMD:C_0805_2012Metric)
       (datasheet ~)
       (fields
-        (field (name manf#) 0603YD475MAT2A))
+        (field (name manf#) 0805YD475MAT2A))
       (libsource (lib Device) (part C_Small) (description "Unpolarized capacitor, small symbol"))
       (sheetpath (names "/Power Subsystems/") (tstamps /5E65196E/))
       (tstamp 5E82B8FF))
@@ -612,7 +612,7 @@
       (tstamp 5E94F995))
     (comp (ref U5)
       (value STF202-22T1G)
-      (footprint SOT95P275X110-6N)
+      (footprint footprints:SOT95P275X110-6N)
       (datasheet http://www.onsemi.com/pub/Collateral/STF202-22T1-D.PDF)
       (fields
         (field (name "Allied Price/Stock") http://www.alliedelec.com/on-semiconductor-stf202-22t1g/70341539/)
