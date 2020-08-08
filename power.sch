@@ -115,18 +115,6 @@ F 3 "" H 4375 3125 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J3
-U 1 1 5E6546D5
-P 8060 2970
-F 0 "J3" H 8140 2962 50  0000 L CNN
-F 1 "Conn_01x02" H 8140 2871 50  0000 L CNN
-F 2 "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal" H 8060 2970 50  0001 C CNN
-F 3 "~" H 8060 2970 50  0001 C CNN
-F 4 "S2B-PH-SM4-TB(LF)(SN)" H 8060 2970 50  0001 C CNN "manf#"
-	1    8060 2970
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:USB_B_Micro USB1
 U 1 1 5E64C8C4
 P 1600 3250
@@ -819,4 +807,16 @@ Wire Wire Line
 	4755 2670 4755 2775
 Wire Wire Line
 	4755 2775 4630 2775
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 5E6546D5
+P 8060 3070
+F 0 "J3" H 8140 3062 50  0000 L CNN
+F 1 "Conn_01x02" H 8140 2971 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal" H 8060 3070 50  0001 C CNN
+F 3 "~" H 8060 3070 50  0001 C CNN
+F 4 "S2B-PH-SM4-TB(LF)(SN)" H 8060 3070 50  0001 C CNN "manf#"
+	1    8060 3070
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC
