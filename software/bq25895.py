@@ -21,7 +21,8 @@ class PowerOmega:
     REG_ILIM = 0x00 #ILIM register
 
     ####Edit this section to suit your needs######
-    BYTE_ILIM =  0b01101000 #2A input current limit
+    BYTE_ILIM =  0b00000000 #Input limit disabled
+    #BYTE_ILIM =  0b01101000 #2A input current limit
     #BYTE_ILIM =  0b01111111 #3.25A input current limit
     BYTE_ICHG =  0b00001000 #.5A charging current limit
     #BYTE_ICHG =  0b00010000 #1A charging current limit
@@ -177,5 +178,15 @@ class PowerOmega:
 
 if __name__=="__main__":
     ups = PowerOmega()
+    # Initial Charge start
     ups.initialize()
+    print(ups.read_status(True))
+    # Cycle BATFET to enable charge start
+    ups.bat_disconnect()
+    time.sleep(10)
+    print(ups.read_status(True))
+    time.sleep(10)
+    # Re-initialize and see if charge starts
+    ups.initialize()
+    time.sleep(10)
     print(ups.read_status(True))
