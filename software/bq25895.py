@@ -21,11 +21,11 @@ class PowerOmega:
     REG_ILIM = 0x00 #ILIM register
 
     ####Edit this section to suit your needs######
-    #BYTE_ILIM =  0b01101000 #2A input current limit
-    BYTE_ILIM =  0b01111111 #3.25A input current limit
-    #BYTE_ICHG =  0b00001000 #.5A charging current limit
-    BYTE_ICHG =  0b00010000 #1A charging current limit
-    BAT_CAPACITY = 2900 #Battery capacity in mAh
+    BYTE_ILIM =  0b01101000 #2A input current limit
+    #BYTE_ILIM =  0b01111111 #3.25A input current limit
+    BYTE_ICHG =  0b00001000 #.5A charging current limit
+    #BYTE_ICHG =  0b00010000 #1A charging current limit
+    BAT_CAPACITY = 1800 #Battery capacity in mAh
     CURRENT_DRAW = 2000 #Current draw in mAh approximately
     VBAT_LOW = 3.2
     ###############################################
@@ -42,8 +42,8 @@ class PowerOmega:
     REG_BATFET_DIS = 0x09
     BYTE_BATFET_DIS = 0b01101000
     REG_STATUS = 0x0B #address of status register
-    REG_VBAT = 0x0e
-    REG_FAULT = 0x0c
+    REG_VBAT = 0x0E
+    REG_FAULT = 0x0C
     REG_IBAT = 0x12
     REG_VBUS = 0x11
     VBAT_MAX = 4.208
@@ -124,6 +124,7 @@ class PowerOmega:
                 self.bus.readBytes(self.ADDRESS, self.REG_FAULT, 1)
             self.bus.writeByte(self.ADDRESS, self.REG_CONV_ADC, self.BYTE_CONV_ADC_START)
             time.sleep(2)
+            bat_fet = self.bus.readBytes(self.ADDRESS, self.REG_BATFET,1)[0]
             status = self.bus.readBytes(self.ADDRESS, self.REG_STATUS,1)[0]
             status = self._int_to_bool_list(int(status))            
             vbat = self._vbat_convert(self.bus.readBytes(self.ADDRESS, self.REG_VBAT, 1)[0])            
