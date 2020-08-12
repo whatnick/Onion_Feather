@@ -14,12 +14,8 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Wire Wire Line
-	3825 3900 3825 3750
-Text Label 3825 3900 0    10   ~ 0
-GND
-Wire Wire Line
-	4375 3850 4375 3900
-Text Label 4375 3850 0    10   ~ 0
+	3325 5901 3325 5951
+Text Label 3325 5901 0    10   ~ 0
 GND
 Wire Wire Line
 	3125 3900 3125 3850
@@ -37,41 +33,28 @@ VIN
 $Comp
 L Omega2-IO-Power-eagle-import:CAP0805-CAP-LARGEPADS C?
 U 1 1 5E652DD3
-P 4375 3750
+P 3325 5801
 AR Path="/5E646706/5E652DD3" Ref="C?"  Part="1" 
 AR Path="/5E65196E/5E652DD3" Ref="C2"  Part="1" 
-F 0 "C2" H 4435 3865 59  0000 L BNN
-F 1 "10u" H 4435 3665 59  0000 L BNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4375 3750 50  0001 C CNN
-F 3 "" H 4375 3750 50  0001 C CNN
-F 4 "C0805C106K4PAC" H 4375 3750 50  0001 C CNN "manf#"
-	1    4375 3750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Omega2-IO-Power-eagle-import:GND #GND?
-U 1 1 5E652DD9
-P 3825 4000
-AR Path="/5E646706/5E652DD9" Ref="#GND?"  Part="1" 
-AR Path="/5E65196E/5E652DD9" Ref="#GND0101"  Part="1" 
-F 0 "#GND0101" H 3825 4000 50  0001 C CNN
-F 1 "GND" H 3725 3900 59  0000 L BNN
-F 2 "" H 3825 4000 50  0001 C CNN
-F 3 "" H 3825 4000 50  0001 C CNN
-	1    3825 4000
+F 0 "C2" H 3385 5916 59  0000 L BNN
+F 1 "10u" H 3385 5716 59  0000 L BNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3325 5801 50  0001 C CNN
+F 3 "" H 3325 5801 50  0001 C CNN
+F 4 "C0805C106K4PAC" H 3325 5801 50  0001 C CNN "manf#"
+	1    3325 5801
 	1    0    0    -1  
 $EndComp
 $Comp
 L Omega2-IO-Power-eagle-import:GND #GND?
 U 1 1 5E652DDF
-P 4375 4000
+P 3325 6051
 AR Path="/5E646706/5E652DDF" Ref="#GND?"  Part="1" 
 AR Path="/5E65196E/5E652DDF" Ref="#GND0102"  Part="1" 
-F 0 "#GND0102" H 4375 4000 50  0001 C CNN
-F 1 "GND" H 4275 3900 59  0000 L BNN
-F 2 "" H 4375 4000 50  0001 C CNN
-F 3 "" H 4375 4000 50  0001 C CNN
-	1    4375 4000
+F 0 "#GND0102" H 3325 6051 50  0001 C CNN
+F 1 "GND" H 3225 5951 59  0000 L BNN
+F 2 "" H 3325 6051 50  0001 C CNN
+F 3 "" H 3325 6051 50  0001 C CNN
+	1    3325 6051
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -104,14 +87,14 @@ $EndComp
 $Comp
 L Omega2-IO-Power-eagle-import:3.3V #U$?
 U 1 1 5E652E09
-P 4375 3125
+P 3325 5176
 AR Path="/5E646706/5E652E09" Ref="#U$?"  Part="1" 
 AR Path="/5E65196E/5E652E09" Ref="#U$0102"  Part="1" 
-F 0 "#U$0102" H 4375 3125 50  0001 C CNN
-F 1 "3.3V" H 4315 3165 42  0000 L BNN
-F 2 "" H 4375 3125 50  0001 C CNN
-F 3 "" H 4375 3125 50  0001 C CNN
-	1    4375 3125
+F 0 "#U$0102" H 3325 5176 50  0001 C CNN
+F 1 "3.3V" H 3265 5216 42  0000 L BNN
+F 2 "" H 3325 5176 50  0001 C CNN
+F 3 "" H 3325 5176 50  0001 C CNN
+	1    3325 5176
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -152,20 +135,6 @@ F 3 "" H 3125 3100 50  0001 C CNN
 	1    3125 3100
 	1    0    0    -1  
 $EndComp
-$Comp
-L Regulator_Linear:AP1117-33 U2
-U 1 1 5E80DF0D
-P 3825 3450
-F 0 "U2" H 3825 3692 50  0000 C CNN
-F 1 "AP1117-33" H 3825 3601 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 3825 3650 50  0001 C CNN
-F 3 "http://www.diodes.com/datasheets/AP1117.pdf" H 3925 3200 50  0001 C CNN
-F 4 "TLV1117-33IDCYR" H 3825 3450 50  0001 C CNN "manf#"
-	1    3825 3450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3125 3450 3525 3450
 $Comp
 L Battery_Management:BQ25895RTW U4
 U 1 1 5E815E94
@@ -744,13 +713,6 @@ Wire Wire Line
 Wire Wire Line
 	2450 3450 2450 3455
 Connection ~ 2450 3450
-Wire Wire Line
-	4375 3225 4375 3450
-Wire Wire Line
-	4125 3450 4375 3450
-Connection ~ 4375 3450
-Wire Wire Line
-	4375 3450 4375 3550
 $Comp
 L Connector:TestPoint TP?
 U 1 1 5E979121
@@ -870,4 +832,68 @@ Wire Wire Line
 Connection ~ 5479 3670
 Wire Wire Line
 	5479 3670 5780 3670
+Wire Wire Line
+	2418 5500 2420 5500
+Text GLabel 2220 5800 3    50   Input ~ 0
+VBAT
+$Comp
+L Omega2-IO-Power-eagle-import:VIN #U$?
+U 1 1 5F362570
+P 2220 5100
+AR Path="/5E646706/5F362570" Ref="#U$?"  Part="1" 
+AR Path="/5E65196E/5F362570" Ref="#U$01"  Part="1" 
+F 0 "#U$01" H 2220 5100 50  0001 C CNN
+F 1 "VIN" H 2160 5140 42  0000 L BNN
+F 2 "" H 2220 5100 50  0001 C CNN
+F 3 "" H 2220 5100 50  0001 C CNN
+	1    2220 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky_x2_KCom_AAK D2
+U 1 1 5F346277
+P 2220 5500
+F 0 "D2" V 2174 5579 50  0000 L CNN
+F 1 "D_Schottky_x2_KCom_AAK" V 2265 5579 50  0000 L CNN
+F 2 "footprints:SOT1061" H 2220 5500 50  0001 C CNN
+F 3 "~" H 2220 5500 50  0001 C CNN
+F 4 "PMEG4010CPA,115" H 2220 5500 50  0001 C CNN "manf#"
+	1    2220 5500
+	0    -1   1    0   
+$EndComp
+$Comp
+L Omega2-IO-Power-eagle-import:GND #GND?
+U 1 1 5E652DD9
+P 2720 5900
+AR Path="/5E646706/5E652DD9" Ref="#GND?"  Part="1" 
+AR Path="/5E65196E/5E652DD9" Ref="#GND0101"  Part="1" 
+F 0 "#GND0101" H 2720 5900 50  0001 C CNN
+F 1 "GND" H 2620 5800 59  0000 L BNN
+F 2 "" H 2720 5900 50  0001 C CNN
+F 3 "" H 2720 5900 50  0001 C CNN
+	1    2720 5900
+	1    0    0    -1  
+$EndComp
+Text Label 2720 5797 0    10   ~ 0
+GND
+Connection ~ 2420 5500
+$Comp
+L Regulator_Linear:AP1117-33 U2
+U 1 1 5E80DF0D
+P 2720 5500
+F 0 "U2" H 2720 5742 50  0000 C CNN
+F 1 "AP1117-33" H 2720 5651 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 2720 5700 50  0001 C CNN
+F 3 "http://www.diodes.com/datasheets/AP1117.pdf" H 2820 5250 50  0001 C CNN
+F 4 "TLV1117-33IDCYR" H 2720 5500 50  0001 C CNN "manf#"
+	1    2720 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3325 5276 3325 5500
+Wire Wire Line
+	3020 5500 3325 5500
+Connection ~ 3325 5500
+Wire Wire Line
+	3325 5500 3325 5601
 $EndSCHEMATC
