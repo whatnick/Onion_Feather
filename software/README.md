@@ -13,4 +13,5 @@ getting used to. Essential steps are :
   - Install the plugin in VSCode
   - Start the RMate server on the host using the VSCode Command Pallette
   - Setup SSH port forward from host with `ssh -R 52698:127.0.0.1:52698 root@xxx.xxx.xxx.xxx`
-  - Start rmate on the remote with `rmate -p 52698 bq25895.py` to pop open the 
+  - Start rmate on the remote with `rmate -p 52698 bq25895.py` to pop open the file to edit
+  - Edit and save on VSCode with ease, then execute over the SSH shell on the Onion
