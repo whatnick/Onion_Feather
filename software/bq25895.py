@@ -181,12 +181,15 @@ if __name__=="__main__":
     # Initial Charge start
     ups.initialize()
     print(ups.read_status(True))
-    # Cycle BATFET to enable charge start
-    ups.bat_disconnect()
-    time.sleep(10)
-    print(ups.read_status(True))
-    time.sleep(10)
-    # Re-initialize and see if charge starts
-    ups.initialize()
-    time.sleep(10)
-    print(ups.read_status(True))
+
+    if len(sys.argv) > 1 and sys.argv[1] == "cycle":
+        # Cycle BATFET to enable charge start
+        # If powered from battery only this will switch off the device
+        ups.bat_disconnect()
+        time.sleep(10)
+        print(ups.read_status(True))
+        time.sleep(10)
+        # Re-initialize and see if charge starts
+        ups.initialize()
+        time.sleep(10)
+        print(ups.read_status(True))
