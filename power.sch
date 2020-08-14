@@ -18,16 +18,9 @@ Wire Wire Line
 Text Label 3325 5901 0    10   ~ 0
 GND
 Wire Wire Line
-	3125 3900 3125 3850
-Text Label 3125 3900 0    10   ~ 0
-GND
-Wire Wire Line
 	1600 2850 1600 2800
 Wire Wire Line
-	3125 3450 3125 3550
-Wire Wire Line
 	3125 3450 3125 3200
-Connection ~ 3125 3450
 Text Label 2913 3450 0    70   ~ 0
 VIN
 $Comp
@@ -58,30 +51,16 @@ F 3 "" H 3325 6051 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Omega2-IO-Power-eagle-import:CAP0805-CAP-LARGEPADS C?
-U 1 1 5E652DE5
-P 3125 3750
-AR Path="/5E646706/5E652DE5" Ref="C?"  Part="1" 
-AR Path="/5E65196E/5E652DE5" Ref="C1"  Part="1" 
-F 0 "C1" H 3185 3865 59  0000 L BNN
-F 1 "10u" H 3185 3665 59  0000 L BNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 3125 3750 50  0001 C CNN
-F 3 "" H 3125 3750 50  0001 C CNN
-F 4 "C0805C106K4PAC" H 3125 3750 50  0001 C CNN "manf#"
-	1    3125 3750
-	1    0    0    -1  
-$EndComp
-$Comp
 L Omega2-IO-Power-eagle-import:GND #GND?
 U 1 1 5E652DEB
-P 3125 4000
+P 2200 6001
 AR Path="/5E646706/5E652DEB" Ref="#GND?"  Part="1" 
 AR Path="/5E65196E/5E652DEB" Ref="#GND0103"  Part="1" 
-F 0 "#GND0103" H 3125 4000 50  0001 C CNN
-F 1 "GND" H 3025 3900 59  0000 L BNN
-F 2 "" H 3125 4000 50  0001 C CNN
-F 3 "" H 3125 4000 50  0001 C CNN
-	1    3125 4000
+F 0 "#GND0103" H 2200 6001 50  0001 C CNN
+F 1 "GND" H 2100 5901 59  0000 L BNN
+F 2 "" H 2200 6001 50  0001 C CNN
+F 3 "" H 2200 6001 50  0001 C CNN
+	1    2200 6001
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -832,34 +811,18 @@ Wire Wire Line
 Connection ~ 5479 3670
 Wire Wire Line
 	5479 3670 5780 3670
-Wire Wire Line
-	2418 5500 2420 5500
-Text GLabel 2220 5800 3    50   Input ~ 0
-VBAT
 $Comp
 L Omega2-IO-Power-eagle-import:VIN #U$?
 U 1 1 5F362570
-P 2220 5100
+P 1801 5100
 AR Path="/5E646706/5F362570" Ref="#U$?"  Part="1" 
 AR Path="/5E65196E/5F362570" Ref="#U$01"  Part="1" 
-F 0 "#U$01" H 2220 5100 50  0001 C CNN
-F 1 "VIN" H 2160 5140 42  0000 L BNN
-F 2 "" H 2220 5100 50  0001 C CNN
-F 3 "" H 2220 5100 50  0001 C CNN
-	1    2220 5100
+F 0 "#U$01" H 1801 5100 50  0001 C CNN
+F 1 "VIN" H 1741 5140 42  0000 L BNN
+F 2 "" H 1801 5100 50  0001 C CNN
+F 3 "" H 1801 5100 50  0001 C CNN
+	1    1801 5100
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Schottky_x2_KCom_AAK D2
-U 1 1 5F346277
-P 2220 5500
-F 0 "D2" V 2174 5579 50  0000 L CNN
-F 1 "D_Schottky_x2_KCom_AAK" V 2265 5579 50  0000 L CNN
-F 2 "footprints:SOT1061" H 2220 5500 50  0001 C CNN
-F 3 "~" H 2220 5500 50  0001 C CNN
-F 4 "PMEG4010CPA,115" H 2220 5500 50  0001 C CNN "manf#"
-	1    2220 5500
-	0    -1   1    0   
 $EndComp
 $Comp
 L Omega2-IO-Power-eagle-import:GND #GND?
@@ -876,7 +839,6 @@ F 3 "" H 2720 5900 50  0001 C CNN
 $EndComp
 Text Label 2720 5797 0    10   ~ 0
 GND
-Connection ~ 2420 5500
 $Comp
 L Regulator_Linear:AP1117-33 U2
 U 1 1 5E80DF0D
@@ -896,4 +858,48 @@ Wire Wire Line
 Connection ~ 3325 5500
 Wire Wire Line
 	3325 5500 3325 5601
+Wire Wire Line
+	2200 5901 2200 5851
+Text Label 2200 5901 0    10   ~ 0
+GND
+$Comp
+L Device:D_Schottky_x2_KCom_AAK D2
+U 1 1 5F346277
+P 1801 5500
+F 0 "D2" V 1755 5579 50  0000 L CNN
+F 1 "D_Schottky_x2_KCom_AAK" V 1846 5579 50  0000 L CNN
+F 2 "footprints:SOT1061" H 1801 5500 50  0001 C CNN
+F 3 "~" H 1801 5500 50  0001 C CNN
+F 4 "PMEG4010CPA,115" H 1801 5500 50  0001 C CNN "manf#"
+	1    1801 5500
+	0    -1   1    0   
+$EndComp
+Text GLabel 1801 5800 3    50   Input ~ 0
+VBAT
+Wire Wire Line
+	2000 5500 2001 5500
+Connection ~ 2001 5500
+$Comp
+L Omega2-IO-Power-eagle-import:CAP0805-CAP-LARGEPADS C?
+U 1 1 5E652DE5
+P 2200 5751
+AR Path="/5E646706/5E652DE5" Ref="C?"  Part="1" 
+AR Path="/5E65196E/5E652DE5" Ref="C1"  Part="1" 
+F 0 "C1" H 2260 5866 59  0000 L BNN
+F 1 "10u" H 2260 5666 59  0000 L BNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2200 5751 50  0001 C CNN
+F 3 "" H 2200 5751 50  0001 C CNN
+F 4 "C0805C106K4PAC" H 2200 5751 50  0001 C CNN "manf#"
+	1    2200 5751
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 5551 2200 5500
+Wire Wire Line
+	2001 5500 2200 5500
+Connection ~ 2200 5500
+Wire Wire Line
+	2200 5500 2420 5500
+Text Label 2001 5500 0    50   ~ 0
+V_UPS
 $EndSCHEMATC
