@@ -17,7 +17,7 @@ class PowerOmega:
     REG_WATCHDOG = 0x07
     BYTE_WATCHDOG_STOP =  0b10001101 #Stop Watchdog timer
     REG_SYSMIN = 0x03
-    BYTE_SYSMIN = 0b00010000
+    BYTE_SYSMIN = 0b00110000
     REG_ILIM = 0x00 #ILIM register
 
     ####Edit this section to suit your needs######
