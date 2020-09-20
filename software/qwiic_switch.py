@@ -29,8 +29,9 @@ class Qwiic_Button:
     LED_PULSE_CYCLE_TIME = 0x1B
     LED_PULSE_OFF_TIME = 0x1D
 
-    def __init__(self):
-        pass        
+    def __init__(self, address = None):
+        if not address is None:
+            self.ADDRESS = address        
         
     def initialize(self):
         try:
@@ -43,6 +44,24 @@ class Qwiic_Button:
             logging.error("Initialization failed, check connection to the button")
             return 1
 
+    def get_button(self):
+        return self.bus.readBytes(self.ADDRESS, self.BUTTON_STATUS, 1)[0]
+
+    def set_led(self, brightness):
+        self.bus.writeByte(self.ADDRESS, self.LED_BRIGHTNESS, brightness)
+
 if __name__=="__main__":
-    button = Qwiic_Button()
-    button.initialize()
+    button_1 = Qwiic_Button()
+    button_2 = Qwiic_Button(0x6E)
+    button_1.initialize()
+    button_2.initialize()
+    while True:
+        if button_1.get_button() == 7:
+            button_1.set_led(0x1F)
+        else:
+            button_1.set_led(0x00)
+        
+        if button_2.get_button() == 7:
+            button_2.set_led(0x1F)
+        else:
+            button_2.set_led(0x00)
