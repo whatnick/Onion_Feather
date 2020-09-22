@@ -4,4 +4,5 @@
   (lib (name Omega2-IO-Power-eagle-import)(type Legacy)(uri ${KIPRJMOD}/Omega2-IO-Power-eagle-import.lib)(options "")(descr ""))
   (lib (name MAX11646EUA+T)(type Legacy)(uri ${KIPRJMOD}/library/MAX11646EUA+T.lib)(options "")(descr ""))
   (lib (name STF202-22T1G)(type Legacy)(uri ${KIPRJMOD}/library/STF202-22T1G.lib)(options "")(descr ""))
+  (lib (name SN74HC367PWR)(type Legacy)(uri ${KIPRJMOD}/library/SN74HC367PWR.lib)(options "")(descr ""))
 )

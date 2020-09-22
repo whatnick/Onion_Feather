@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SN74HC367PWR
+D Hex Buffers And Line Drivers With 3-State Outputs
+K
+F http://www.ti.com/lit/gpn/sn74hc367
+$ENDCMP
+#
+#End Doc Library

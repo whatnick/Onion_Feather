@@ -342,4 +342,22 @@ Wire Wire Line
 	7475 2925 7475 2950
 Wire Wire Line
 	6850 2925 7475 2925
+$Comp
+L SN74HC367PWR:SN74HC367PWR IC2
+U 1 1 5F69F743
+P 2668 4163
+F 0 "IC2" H 3218 4428 50  0000 C CNN
+F 1 "SN74HC367PWR" H 3218 4337 50  0000 C CNN
+F 2 "SOP65P640X120-16N" H 3618 4263 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc367" H 3618 4163 50  0001 L CNN
+F 4 "Hex Buffers And Line Drivers With 3-State Outputs" H 3618 4063 50  0001 L CNN "Description"
+F 5 "1.2" H 3618 3963 50  0001 L CNN "Height"
+F 6 "595-SN74HC367PWR" H 3618 3863 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN74HC367PWR?qs=AgY10sKTvDKld%2FQBktTc2A%3D%3D" H 3618 3763 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 3618 3663 50  0001 L CNN "Manufacturer_Name"
+F 9 "SN74HC367PWR" H 3618 3563 50  0001 L CNN "Manufacturer_Part_Number"
+F 10 "SN74HC367PWR" H 2668 4163 50  0001 C CNN "manf#"
+	1    2668 4163
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
