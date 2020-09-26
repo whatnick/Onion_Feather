@@ -28,13 +28,13 @@ F 4 "NA" H 5025 2550 50  0001 C CNN "DNP"
 	0    1    1    0   
 $EndComp
 Text GLabel 4825 3750 0    50   Input ~ 0
-SCLK
+SCLK_BUF
 Text GLabel 4825 3850 0    50   Input ~ 0
-MOSI
+MOSI_BUF
 Text GLabel 4825 3950 0    50   Output ~ 0
-MISO
+MISO_BUF
 Text GLabel 6525 3750 2    50   Output ~ 0
-CS
+CS_BUF
 Text GLabel 6525 4250 2    50   Output ~ 0
 SDA
 Text GLabel 6525 4150 2    50   Output ~ 0

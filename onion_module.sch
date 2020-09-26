@@ -58,40 +58,30 @@ Text Label 7375 3325 0    70   ~ 0
 TX
 Wire Wire Line
 	4900 4125 5350 4125
-Text Label 4975 4125 0    70   ~ 0
+Text Label 4900 4125 2    70   ~ 0
 CS
 Wire Wire Line
 	3100 3150 2750 3150
-Text Label 2775 3150 0    70   ~ 0
-CS
 Wire Wire Line
 	4900 3925 5350 3925
-Text Label 4975 3925 0    70   ~ 0
+Text Label 4900 3925 2    70   ~ 0
 MOSI
 Wire Wire Line
 	3700 3050 4100 3050
-Text Label 3800 3050 0    70   ~ 0
-MOSI
 Text Label 8175 4425 0    70   ~ 0
 SDA
 Text Label 8175 4325 0    70   ~ 0
 SCL
 Wire Wire Line
 	4900 3825 5350 3825
-Text Label 4975 3825 0    70   ~ 0
-MISO
 Wire Wire Line
 	3100 2950 2750 2950
-Text Label 2775 2950 0    70   ~ 0
-MISO
 Wire Wire Line
 	4900 4025 5350 4025
-Text Label 4975 4025 0    70   ~ 0
+Text Label 4900 4025 2    70   ~ 0
 CLK
 Wire Wire Line
 	3100 3050 2750 3050
-Text Label 2775 3050 0    70   ~ 0
-CLK
 $Comp
 L Omega2-IO-Power-eagle-import:M04PTH J5
 U 1 1 72792358
@@ -191,13 +181,13 @@ SCL
 Text GLabel 7675 4425 3    50   Output ~ 0
 SDA
 Text GLabel 2750 2950 0    50   Input ~ 0
-MISO
+MISO_BUF
 Text GLabel 2750 3050 0    50   Output ~ 0
-SCLK
+SCLK_BUF
 Text GLabel 2750 3150 0    50   Output ~ 0
-CS
+CS_BUF
 Text GLabel 4100 3050 2    50   Output ~ 0
-MOSI
+MOSI_BUF
 $Comp
 L power:GND #PWR0101
 U 1 1 5E825674
@@ -308,14 +298,6 @@ Text GLabel 6950 3625 2    50   Input ~ 0
 NET_POW
 Text GLabel 5350 3725 0    50   Output ~ 0
 FEATHER_TX
-Text GLabel 4900 3925 0    50   Output ~ 0
-MOSI
-Text GLabel 4900 3825 0    50   Input ~ 0
-MISO
-Text GLabel 4900 4025 0    50   Output ~ 0
-SCLK
-Text GLabel 4900 4125 0    50   Output ~ 0
-CS
 $Comp
 L Omega2-IO-Power-eagle-import:3.3V #U$0104
 U 1 1 5E933EB7
@@ -360,4 +342,48 @@ F 10 "SN74HC367PWR" H 2668 4163 50  0001 C CNN "manf#"
 	1    2668 4163
 	1    0    0    -1  
 $EndComp
+Text Label 2668 4263 2    50   ~ 0
+CS
+Text Label 2668 4463 2    70   ~ 0
+MOSI
+Text Label 2668 4663 2    70   ~ 0
+CLK
+Text Label 2668 4863 2    70   ~ 0
+GND
+Text Label 3768 4163 0    70   ~ 0
+3V3
+Wire Wire Line
+	2668 4163 2579 4163
+Wire Wire Line
+	2579 4163 2579 4263
+Wire Wire Line
+	2579 4263 2668 4263
+Connection ~ 2668 4263
+Wire Wire Line
+	2668 4263 2669 4263
+NoConn ~ 3768 4263
+NoConn ~ 3768 4463
+NoConn ~ 3768 4363
+NoConn ~ 3768 4563
+NoConn ~ 3768 4663
+Text GLabel 2295 4363 0    50   Output ~ 0
+CS_BUF
+Text GLabel 2305 4763 0    50   Output ~ 0
+SCLK_BUF
+Text GLabel 2279 4563 0    50   Output ~ 0
+MOSI_BUF
+Wire Wire Line
+	2668 4363 2295 4363
+Wire Wire Line
+	2668 4563 2279 4563
+Wire Wire Line
+	2668 4763 2305 4763
+Wire Wire Line
+	3768 4763 4104 4763
+Text GLabel 4104 4763 2    50   Input ~ 0
+MISO_BUF
+Text Label 3768 4863 0    70   ~ 0
+MISO
+Text Label 4900 3825 2    70   ~ 0
+MISO
 $EndSCHEMATC
