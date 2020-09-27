@@ -317,55 +317,19 @@ F 4 "MCT0603MZ0000ZP500" H 7150 3475 50  0001 C CNN "manf#"
 $EndComp
 Wire Wire Line
 	7050 3475 6850 3475
-$Comp
-L STF202-22T1G:STF202-22T1G U5
-U 1 1 5E91672A
-P 8875 3575
-F 0 "U5" H 9575 3110 50  0000 C CNN
-F 1 "STF202-22T1G" H 9575 3201 50  0000 C CNN
-F 2 "footprints:SOT95P275X110-6N" H 10125 3675 50  0001 L CNN
-F 3 "http://www.onsemi.com/pub/Collateral/STF202-22T1-D.PDF" H 10125 3575 50  0001 L CNN
-F 4 "USB Filter with ESD Protection" H 10125 3475 50  0001 L CNN "Description"
-F 5 "1.1" H 10125 3375 50  0001 L CNN "Height"
-F 6 "ON Semiconductor" H 10125 3275 50  0001 L CNN "Manufacturer_Name"
-F 7 "STF202-22T1G" H 10125 3175 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "863-STF202-22T1G" H 10125 3075 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=863-STF202-22T1G" H 10125 2975 50  0001 L CNN "Mouser Price/Stock"
-F 10 "1869924" H 10125 2875 50  0001 L CNN "RS Part Number"
-F 11 "http://uk.rs-online.com/web/p/products/1869924" H 10125 2775 50  0001 L CNN "RS Price/Stock"
-F 12 "70341539" H 10125 2675 50  0001 L CNN "Allied_Number"
-F 13 "http://www.alliedelec.com/on-semiconductor-stf202-22t1g/70341539/" H 10125 2575 50  0001 L CNN "Allied Price/Stock"
-F 14 "STF202-22T1G" H 8875 3575 50  0001 C CNN "manf#"
-	1    8875 3575
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	7250 3375 7475 3375
-Wire Wire Line
-	7250 3475 7475 3475
-Wire Wire Line
-	7475 3575 7425 3575
 Wire Wire Line
 	7425 3575 7425 3700
 $Comp
 L power:GND #PWR06
 U 1 1 5E9251EB
-P 7425 3700
-F 0 "#PWR06" H 7425 3450 50  0001 C CNN
-F 1 "GND" H 7430 3527 50  0000 C CNN
-F 2 "" H 7425 3700 50  0001 C CNN
-F 3 "" H 7425 3700 50  0001 C CNN
-	1    7425 3700
+P 9250 3575
+F 0 "#PWR06" H 9250 3325 50  0001 C CNN
+F 1 "GND" H 9255 3402 50  0000 C CNN
+F 2 "" H 9250 3575 50  0001 C CNN
+F 3 "" H 9250 3575 50  0001 C CNN
+	1    9250 3575
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8875 3375 9275 3375
-Wire Wire Line
-	8875 3475 9275 3475
-Text GLabel 9250 3575 2    50   Input ~ 0
-5V_BOOST
-Wire Wire Line
-	8875 3575 9250 3575
 Wire Wire Line
 	2425 3600 3280 3600
 Connection ~ 3280 3600
@@ -379,4 +343,74 @@ Text GLabel 3250 3700 0    50   Input ~ 0
 USB_IN+
 Wire Wire Line
 	3250 3700 3800 3700
+Text GLabel 7425 3700 3    50   Input ~ 0
+5V_BOOST
+Wire Wire Line
+	8875 3575 9250 3575
+Wire Wire Line
+	8875 3475 9109 3475
+Wire Wire Line
+	8875 3375 9038 3375
+Wire Wire Line
+	7250 3375 7475 3375
+Wire Wire Line
+	7250 3475 7475 3475
+$Comp
+L STF202-22T1G:STF202-22T1G U5
+U 1 1 5E91672A
+P 7475 3575
+F 0 "U5" H 8175 3110 50  0000 C CNN
+F 1 "STF202-22T1G" H 8175 3201 50  0000 C CNN
+F 2 "footprints:SOT95P275X110-6N" H 8725 3675 50  0001 L CNN
+F 3 "http://www.onsemi.com/pub/Collateral/STF202-22T1-D.PDF" H 8725 3575 50  0001 L CNN
+F 4 "USB Filter with ESD Protection" H 8725 3475 50  0001 L CNN "Description"
+F 5 "1.1" H 8725 3375 50  0001 L CNN "Height"
+F 6 "ON Semiconductor" H 8725 3275 50  0001 L CNN "Manufacturer_Name"
+F 7 "STF202-22T1G" H 8725 3175 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "863-STF202-22T1G" H 8725 3075 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=863-STF202-22T1G" H 8725 2975 50  0001 L CNN "Mouser Price/Stock"
+F 10 "1869924" H 8725 2875 50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/1869924" H 8725 2775 50  0001 L CNN "RS Price/Stock"
+F 12 "70341539" H 8725 2675 50  0001 L CNN "Allied_Number"
+F 13 "http://www.alliedelec.com/on-semiconductor-stf202-22t1g/70341539/" H 8725 2575 50  0001 L CNN "Allied Price/Stock"
+F 14 "STF202-22T1G" H 7475 3575 50  0001 C CNN "manf#"
+	1    7475 3575
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9038 3375 9038 3179
+Wire Wire Line
+	7425 3575 7475 3575
+Connection ~ 9038 3375
+Wire Wire Line
+	9038 3375 9275 3375
+Wire Wire Line
+	9109 3475 9109 3178
+Connection ~ 9109 3475
+Wire Wire Line
+	9109 3475 9275 3475
+$Comp
+L Connector:TestPoint TP14
+U 1 1 5F71AA70
+P 9038 3179
+F 0 "TP14" H 8854 3416 50  0000 L CNN
+F 1 "TestPoint" H 8627 3329 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9238 3179 50  0001 C CNN
+F 3 "~" H 9238 3179 50  0001 C CNN
+F 4 "NA" H 9038 3179 50  0001 C CNN "DNP"
+	1    9038 3179
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP15
+U 1 1 5F71B4B9
+P 9109 3178
+F 0 "TP15" H 9150 3417 50  0000 L CNN
+F 1 "TestPoint" H 9148 3323 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9309 3178 50  0001 C CNN
+F 3 "~" H 9309 3178 50  0001 C CNN
+F 4 "NA" H 9109 3178 50  0001 C CNN "DNP"
+	1    9109 3178
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
