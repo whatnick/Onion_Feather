@@ -121,7 +121,7 @@ F 4 "RT0603FRD0749R9L" H 4775 3175 50  0001 C CNN "manf#"
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4650 2475 5125 2475
+	4650 2475 4827 2475
 Wire Wire Line
 	4675 2875 4775 2875
 $Comp
@@ -142,7 +142,7 @@ Wire Wire Line
 	4775 2975 4775 2875
 Connection ~ 4775 2875
 Wire Wire Line
-	4775 2875 5625 2875
+	4775 2875 4998 2875
 Wire Wire Line
 	5125 2975 5125 2475
 Connection ~ 5125 2475
@@ -255,8 +255,6 @@ Wire Wire Line
 Wire Wire Line
 	3725 1975 3825 1975
 Wire Wire Line
-	3725 2375 4175 2375
-Wire Wire Line
 	4175 2975 4175 2375
 Connection ~ 4175 2375
 Wire Wire Line
@@ -264,8 +262,6 @@ Wire Wire Line
 Wire Wire Line
 	3825 2975 3825 1975
 Connection ~ 3825 1975
-Wire Wire Line
-	3825 1975 5625 1975
 NoConn ~ 5625 3575
 NoConn ~ 5625 3775
 NoConn ~ 5625 4075
@@ -292,4 +288,76 @@ Wire Wire Line
 Connection ~ 5550 4475
 Wire Wire Line
 	5550 4475 5550 4550
+Wire Wire Line
+	3825 1975 4167 1975
+$Comp
+L Connector:TestPoint TP16
+U 1 1 5F7343EC
+P 4167 1946
+F 0 "TP16" H 4225 2064 50  0000 L CNN
+F 1 "TestPoint" H 4225 1973 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4367 1946 50  0001 C CNN
+F 3 "~" H 4367 1946 50  0001 C CNN
+F 4 "NA" H 4167 1946 50  0001 C CNN "DNP"
+	1    4167 1946
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4167 1946 4167 1975
+Connection ~ 4167 1975
+Wire Wire Line
+	4167 1975 5625 1975
+$Comp
+L Connector:TestPoint TP17
+U 1 1 5F739C3C
+P 4034 2338
+F 0 "TP17" H 4092 2456 50  0000 L CNN
+F 1 "TestPoint" H 4092 2365 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4234 2338 50  0001 C CNN
+F 3 "~" H 4234 2338 50  0001 C CNN
+F 4 "NA" H 4034 2338 50  0001 C CNN "DNP"
+	1    4034 2338
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3725 2375 4034 2375
+Wire Wire Line
+	4034 2338 4034 2375
+Connection ~ 4034 2375
+Wire Wire Line
+	4034 2375 4175 2375
+$Comp
+L Connector:TestPoint TP18
+U 1 1 5F73CB1E
+P 4827 2545
+F 0 "TP18" H 4966 2577 50  0000 R CNN
+F 1 "TestPoint" H 5208 2651 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5027 2545 50  0001 C CNN
+F 3 "~" H 5027 2545 50  0001 C CNN
+F 4 "NA" H 4827 2545 50  0001 C CNN "DNP"
+	1    4827 2545
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP19
+U 1 1 5F73DB0A
+P 4998 2823
+F 0 "TP19" H 5056 2941 50  0000 L CNN
+F 1 "TestPoint" H 5056 2850 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5198 2823 50  0001 C CNN
+F 3 "~" H 5198 2823 50  0001 C CNN
+F 4 "NA" H 4998 2823 50  0001 C CNN "DNP"
+	1    4998 2823
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4998 2823 4998 2875
+Connection ~ 4998 2875
+Wire Wire Line
+	4998 2875 5625 2875
+Wire Wire Line
+	4827 2545 4827 2475
+Connection ~ 4827 2475
+Wire Wire Line
+	4827 2475 5125 2475
 $EndSCHEMATC
