@@ -360,4 +360,8 @@ Wire Wire Line
 Connection ~ 4827 2475
 Wire Wire Line
 	4827 2475 5125 2475
+Text GLabel 4173 3500 3    50   Input ~ 0
+NET_POW
+Text GLabel 5123 3500 3    50   Input ~ 0
+NET_POW
 $EndSCHEMATC
