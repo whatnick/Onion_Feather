@@ -4,8 +4,9 @@
 - Install base python3 `opkg install python3-light`
 - The scripts with logging will require `opkg install python3`
 - Install i2c module `opkg install python3-onion-i2c`
+- Install oled module `opkg install python3-oled-exp`
 - Install spi module `opkg install python3-spidev`
-- Conenct to the Onion Omega hardware from VSCode over ssh
+- Connect to the Onion Omega hardware from VSCode over ssh
 - Install some form of rmate, may be the [Python one](https://github.com/sclukey/rmate-python), it will also require
 a standard python2 installation on the Omega2 `opkg install python`.
 - Install an RMate client on the Onion Omega for [Remote VSCode](https://marketplace.visualstudio.com/items?itemName=rafaelmaiolla.remote-vscode))
