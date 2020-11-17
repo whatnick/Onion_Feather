@@ -42,7 +42,7 @@ if (ret != 0):
 time.sleep(2)
 
 # write a message
-ret 	= oledExp.write("Welcome to the Omega-Feather")
+ret 	= oledExp.write("This is Omega-Feather")
 print("write return: %s"%ret)
 if (ret != 0):
 	exit()
@@ -55,7 +55,7 @@ if (ret != 0):
 	exit()
 
 # write a message
-ret 	= oledExp.write("Combination is the new invention")
+ret 	= oledExp.write("Combination is invention")
 print("write return: %s"%ret)
 if (ret != 0):
 	exit()
