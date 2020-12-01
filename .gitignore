@@ -3,6 +3,7 @@
 *bck
 *cache*
 _autosave*
+*_backup/*
 
 # Autoroute files
 *.dsn
